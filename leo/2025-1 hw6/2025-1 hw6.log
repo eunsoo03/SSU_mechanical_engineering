@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  23 DEC 2025 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  27 DEC 2025 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,41 +1110,41 @@ Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 (./2025-1 hw6.aux)
 \openout1 = `"2025-1 hw6.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
-ne 87.
+ne 86.
 
 (c:/texlive/2024/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 87.
-Package scrbase Info: activating english \abstractname on input line 87.
-Package scrbase Info: activating english \partname on input line 87.
-Package scrbase Info: activating english \figurename on input line 87.
-Package scrbase Info: activating english \tablename on input line 87.
-Package scrbase Info: activating english \contentsname on input line 87.
-Package scrbase Info: activating english \listfigurename on input line 87.
-Package scrbase Info: activating english \listtablename on input line 87.
-Package scrbase Info: activating english \refname on input line 87.
-Package scrbase Info: activating english \indexname on input line 87.
+LaTeX Font Info:    ... okay on input line 86.
+Package scrbase Info: activating english \abstractname on input line 86.
+Package scrbase Info: activating english \partname on input line 86.
+Package scrbase Info: activating english \figurename on input line 86.
+Package scrbase Info: activating english \tablename on input line 86.
+Package scrbase Info: activating english \contentsname on input line 86.
+Package scrbase Info: activating english \listfigurename on input line 86.
+Package scrbase Info: activating english \listtablename on input line 86.
+Package scrbase Info: activating english \refname on input line 86.
+Package scrbase Info: activating english \indexname on input line 86.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1180,7 +1180,7 @@ Package scrbase Info: activating english \indexname on input line 87.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 87.
+Package hyperref Info: Link coloring ON on input line 86.
 (./2025-1 hw6.out) (./2025-1 hw6.out)
 \@outlinefile=\write4
 \openout4 = `"2025-1 hw6.out"'.
@@ -1192,7 +1192,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 87.
+(scrartcl)           before \begin{document} on input line 86.
 
 (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -1224,13 +1224,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1239,7 +1239,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <SSU symbol KR-EN.jpg, id=7, 1003.75pt x 208.78pt>
 File: SSU symbol KR-EN.jpg Graphic file (type jpg)
 <use SSU symbol KR-EN.jpg>
-Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 95.
+Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 94.
 (pdftex.def)             Requested size: 204.85846pt x 42.60902pt.
 
 
@@ -1248,20 +1248,20 @@ Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 95.
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./SSU symbol KR
 -EN.jpg>]
-<img/p05-009.png, id=28, 402.90524pt x 277.035pt>
+<img/p05-009.png, id=25, 402.90524pt x 277.035pt>
 File: img/p05-009.png Graphic file (type png)
 <use img/p05-009.png>
-Package pdftex.def Info: img/p05-009.png  used on input line 101.
+Package pdftex.def Info: img/p05-009.png  used on input line 100.
 (pdftex.def)             Requested size: 170.71652pt x 117.38533pt.
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 101--101
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 100--100
 [][] 
  []
 
-<img/fig001.png, id=30, 455.301pt x 125.7498pt>
+<img/fig001.png, id=27, 455.301pt x 125.7498pt>
 File: img/fig001.png Graphic file (type png)
 <use img/fig001.png>
-Package pdftex.def Info: img/fig001.png  used on input line 117.
+Package pdftex.def Info: img/fig001.png  used on input line 116.
 (pdftex.def)             Requested size: 455.29988pt x 125.74948pt.
 
 
@@ -1270,114 +1270,114 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \newpage
+l.119 \newpage
                [1 <./img/p05-009.png> <./img/fig001.png>]
-<img/p05-012.png, id=45, 431.211pt x 364.9635pt>
+<img/p05-012.png, id=42, 431.211pt x 364.9635pt>
 File: img/p05-012.png Graphic file (type png)
 <use img/p05-012.png>
-Package pdftex.def Info: img/p05-012.png  used on input line 122.
+Package pdftex.def Info: img/p05-012.png  used on input line 121.
 (pdftex.def)             Requested size: 170.71652pt x 144.49034pt.
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 122--122
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 121--121
 [][] 
  []
 
-<img/fig002.png, id=46, 455.301pt x 125.7498pt>
+<img/fig002.png, id=43, 455.301pt x 125.7498pt>
 File: img/fig002.png Graphic file (type png)
 <use img/fig002.png>
-Package pdftex.def Info: img/fig002.png  used on input line 138.
+Package pdftex.def Info: img/fig002.png  used on input line 137.
 (pdftex.def)             Requested size: 455.29988pt x 125.74948pt.
 
 
 [2 <./img/p05-012.png> <./img/fig002.png>]
-<img/p05-015.png, id=54, 539.616pt x 271.0125pt>
+<img/p05-015.png, id=51, 539.616pt x 271.0125pt>
 File: img/p05-015.png Graphic file (type png)
 <use img/p05-015.png>
-Package pdftex.def Info: img/p05-015.png  used on input line 143.
+Package pdftex.def Info: img/p05-015.png  used on input line 142.
 (pdftex.def)             Requested size: 199.16928pt x 100.02907pt.
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 143--143
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 142--142
 [][] 
  []
 
-<img/p05-025.png, id=55, 578.76225pt x 275.22826pt>
+<img/p05-025.png, id=52, 578.76225pt x 275.22826pt>
 File: img/p05-025.png Graphic file (type png)
 <use img/p05-025.png>
-Package pdftex.def Info: img/p05-025.png  used on input line 153.
+Package pdftex.def Info: img/p05-025.png  used on input line 152.
 (pdftex.def)             Requested size: 213.39566pt x 101.48009pt.
 
-Underfull \hbox (badness 3240) in paragraph at lines 153--153
+Underfull \hbox (badness 3240) in paragraph at lines 152--152
 \OT1/cmr/m/n/10.95 and de-ter-mine the max-i-mum nor-mal
  []
 
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 153--153
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 152--152
 [][] 
  []
 
-<img/fig004.png, id=56, 455.301pt x 121.05225pt>
+<img/fig004.png, id=53, 455.301pt x 121.05225pt>
 File: img/fig004.png Graphic file (type png)
 <use img/fig004.png>
-Package pdftex.def Info: img/fig004.png  used on input line 158.
+Package pdftex.def Info: img/fig004.png  used on input line 157.
 (pdftex.def)             Requested size: 455.29988pt x 121.05194pt.
 
 
 [3 <./img/p05-015.png> <./img/p05-025.png> <./img/fig004.png>]
-<img/p05-056.png, id=67, 560.69475pt x 293.898pt>
+<img/p05-056.png, id=64, 560.69475pt x 293.898pt>
 File: img/p05-056.png Graphic file (type png)
 <use img/p05-056.png>
-Package pdftex.def Info: img/p05-056.png  used on input line 168.
+Package pdftex.def Info: img/p05-056.png  used on input line 167.
 (pdftex.def)             Requested size: 213.39566pt x 111.8528pt.
 
-Underfull \hbox (badness 3240) in paragraph at lines 168--168
+Underfull \hbox (badness 3240) in paragraph at lines 167--167
 \OT1/cmr/m/n/10.95 and de-ter-mine the max-i-mum nor-mal
  []
 
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 168--168
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 167--167
 [][] 
  []
 
-<img/fig005.png, id=68, 455.301pt x 121.05225pt>
+<img/fig005.png, id=65, 455.301pt x 121.05225pt>
 File: img/fig005.png Graphic file (type png)
 <use img/fig005.png>
-Package pdftex.def Info: img/fig005.png  used on input line 173.
+Package pdftex.def Info: img/fig005.png  used on input line 172.
 (pdftex.def)             Requested size: 455.29988pt x 121.05194pt.
 
 
 [4 <./img/p05-056.png> <./img/fig005.png>]
-<img/p05-065.png, id=76, 466.1415pt x 299.31825pt>
+<img/p05-065.png, id=73, 466.1415pt x 299.31825pt>
 File: img/p05-065.png Graphic file (type png)
 <use img/p05-065.png>
-Package pdftex.def Info: img/p05-065.png  used on input line 184.
+Package pdftex.def Info: img/p05-065.png  used on input line 183.
 (pdftex.def)             Requested size: 184.9429pt x 118.75693pt.
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 184--184
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 183--183
 [][] 
  []
 
-<img/fig006.png, id=77, 455.301pt x 121.4136pt>
+<img/fig006.png, id=74, 455.301pt x 121.4136pt>
 File: img/fig006.png Graphic file (type png)
 <use img/fig006.png>
-Package pdftex.def Info: img/fig006.png  used on input line 189.
+Package pdftex.def Info: img/fig006.png  used on input line 188.
 (pdftex.def)             Requested size: 455.29988pt x 121.4133pt.
 
 
 [5 <./img/p05-065.png> <./img/fig006.png>]
-<img/p05-070.png, id=85, 513.71925pt x 221.628pt>
+<img/p05-070.png, id=82, 513.71925pt x 221.628pt>
 File: img/p05-070.png Graphic file (type png)
 <use img/p05-070.png>
-Package pdftex.def Info: img/p05-070.png  used on input line 198.
+Package pdftex.def Info: img/p05-070.png  used on input line 197.
 (pdftex.def)             Requested size: 199.16928pt x 85.9273pt.
 
-Overfull \hbox (2.12083pt too wide) in paragraph at lines 198--198
+Overfull \hbox (2.12083pt too wide) in paragraph at lines 197--197
 [][] 
  []
 
-<img/fig007.png, id=86, 455.301pt x 121.05225pt>
+<img/fig007.png, id=83, 455.301pt x 121.05225pt>
 File: img/fig007.png Graphic file (type png)
 <use img/fig007.png>
-Package pdftex.def Info: img/fig007.png  used on input line 203.
+Package pdftex.def Info: img/fig007.png  used on input line 202.
 (pdftex.def)             Requested size: 455.29988pt x 121.05194pt.
 
 
@@ -1390,11 +1390,11 @@ Package rerunfilecheck Info: File `"2025-1 hw6".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30560 strings out of 473329
- 589528 string characters out of 5723857
- 1155451 words of memory out of 5000000
- 53141 multiletter control sequences out of 15000+600000
- 576223 words of font info for 102 fonts, out of 8000000 for 9000
+ 30554 strings out of 473329
+ 589429 string characters out of 5723857
+ 1155409 words of memory out of 5000000
+ 53138 multiletter control sequences out of 15000+600000
+ 575345 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,107p,10934b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
@@ -1410,19 +1410,17 @@ c/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
 texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2024/texmf-
 dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2024/texmf-dist/f
 onts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2024/texmf-dist/fonts/t
-ype1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/p
-ublic/nanumtype1/nanummjmbc.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/
-nanumtype1/nanummjmc1.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumt
-ype1/nanummjmc2.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/n
-anummjmc5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummj
-mc6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pf
-b><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/
-texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texliv
-e/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on "2025-1 hw6.pdf" (7 pages, 2622999 bytes).
+ype1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2024/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjmc1.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjmc2.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmc5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmcc.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+md5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pf
+b>
+Output written on "2025-1 hw6.pdf" (7 pages, 2516733 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 207 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  14 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

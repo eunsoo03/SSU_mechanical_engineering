@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  21 DEC 2025 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  27 DEC 2025 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1108,41 +1108,41 @@ Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 (./2025-1 hw4.aux)
 \openout1 = `"2025-1 hw4.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 74.
 LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
-ne 75.
+ne 74.
 
 (c:/texlive/2024/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 75.
-Package scrbase Info: activating english \abstractname on input line 75.
-Package scrbase Info: activating english \partname on input line 75.
-Package scrbase Info: activating english \figurename on input line 75.
-Package scrbase Info: activating english \tablename on input line 75.
-Package scrbase Info: activating english \contentsname on input line 75.
-Package scrbase Info: activating english \listfigurename on input line 75.
-Package scrbase Info: activating english \listtablename on input line 75.
-Package scrbase Info: activating english \refname on input line 75.
-Package scrbase Info: activating english \indexname on input line 75.
+LaTeX Font Info:    ... okay on input line 74.
+Package scrbase Info: activating english \abstractname on input line 74.
+Package scrbase Info: activating english \partname on input line 74.
+Package scrbase Info: activating english \figurename on input line 74.
+Package scrbase Info: activating english \tablename on input line 74.
+Package scrbase Info: activating english \contentsname on input line 74.
+Package scrbase Info: activating english \listfigurename on input line 74.
+Package scrbase Info: activating english \listtablename on input line 74.
+Package scrbase Info: activating english \refname on input line 74.
+Package scrbase Info: activating english \indexname on input line 74.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1178,7 +1178,7 @@ Package scrbase Info: activating english \indexname on input line 75.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 74.
 (./2025-1 hw4.out) (./2025-1 hw4.out)
 \@outlinefile=\write4
 \openout4 = `"2025-1 hw4.out"'.
@@ -1190,7 +1190,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 75.
+(scrartcl)           before \begin{document} on input line 74.
 
 (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -1222,13 +1222,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1237,7 +1237,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <SSU symbol KR-EN.jpg, id=7, 1003.75pt x 208.78pt>
 File: SSU symbol KR-EN.jpg Graphic file (type jpg)
 <use SSU symbol KR-EN.jpg>
-Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 84.
+Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 83.
 (pdftex.def)             Requested size: 204.85846pt x 42.60902pt.
 
 
@@ -1246,10 +1246,10 @@ Package pdftex.def Info: SSU symbol KR-EN.jpg  used on input line 84.
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./SSU symbol KR
 -EN.jpg>]
-<img/P3-68.png, id=28, 236.38312pt x 167.12437pt>
+<img/P3-68.png, id=25, 236.38312pt x 167.12437pt>
 File: img/P3-68.png Graphic file (type png)
 <use img/P3-68.png>
-Package pdftex.def Info: img/P3-68.png  used on input line 113.
+Package pdftex.def Info: img/P3-68.png  used on input line 112.
 (pdftex.def)             Requested size: 170.71652pt x 120.6992pt.
 
 
@@ -1258,70 +1258,70 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 \newpage
+l.124 \newpage
                [1 <./img/P3-68.png>]
-<img/P3-71.png, id=45, 504.08325pt x 394.47375pt>
+<img/P3-71.png, id=42, 504.08325pt x 394.47375pt>
 File: img/P3-71.png Graphic file (type png)
 <use img/P3-71.png>
-Package pdftex.def Info: img/P3-71.png  used on input line 131.
+Package pdftex.def Info: img/P3-71.png  used on input line 130.
 (pdftex.def)             Requested size: 170.71652pt x 133.59563pt.
 
 
 [2 <./img/P3-71.png>]
-<img/P3-74.png, id=52, 359.54324pt x 499.8675pt>
+<img/P3-74.png, id=49, 359.54324pt x 499.8675pt>
 File: img/P3-74.png Graphic file (type png)
 <use img/P3-74.png>
-Package pdftex.def Info: img/P3-74.png  used on input line 149.
+Package pdftex.def Info: img/P3-74.png  used on input line 148.
 (pdftex.def)             Requested size: 170.71652pt x 237.34799pt.
 
-Overfull \hbox (2.12082pt too wide) in paragraph at lines 148--153
+Overfull \hbox (2.12082pt too wide) in paragraph at lines 147--152
 [][] 
  []
 
 
 
 [3 <./img/P3-74.png>]
-<img/P3-92.png, id=59, 360.1455pt x 239.09325pt>
+<img/P3-92.png, id=56, 360.1455pt x 239.09325pt>
 File: img/P3-92.png Graphic file (type png)
 <use img/P3-92.png>
-Package pdftex.def Info: img/P3-92.png  used on input line 175.
+Package pdftex.def Info: img/P3-92.png  used on input line 174.
 (pdftex.def)             Requested size: 170.71652pt x 113.33333pt.
 
 
 [4 <./img/P3-92.png>]
-<img/P3-95.png, id=66, 350.5095pt x 358.941pt>
+<img/P3-95.png, id=63, 350.5095pt x 358.941pt>
 File: img/P3-95.png Graphic file (type png)
 <use img/P3-95.png>
-Package pdftex.def Info: img/P3-95.png  used on input line 202.
+Package pdftex.def Info: img/P3-95.png  used on input line 201.
 (pdftex.def)             Requested size: 142.26378pt x 145.68796pt.
 
 
 [5 <./img/P3-95.png>]
-<img/P3-98.png, id=74, 280.04625pt x 212.59425pt>
+<img/P3-98.png, id=71, 280.04625pt x 212.59425pt>
 File: img/P3-98.png Graphic file (type png)
 <use img/P3-98.png>
-Package pdftex.def Info: img/P3-98.png  used on input line 231.
+Package pdftex.def Info: img/P3-98.png  used on input line 230.
 (pdftex.def)             Requested size: 142.26378pt x 108.00316pt.
 
 
 [6 <./img/P3-98.png>]
-<img/P3-116.png, id=82, 371.58826pt x 295.70474pt>
+<img/P3-116.png, id=79, 371.58826pt x 295.70474pt>
 File: img/P3-116.png Graphic file (type png)
 <use img/P3-116.png>
-Package pdftex.def Info: img/P3-116.png  used on input line 257.
+Package pdftex.def Info: img/P3-116.png  used on input line 256.
 (pdftex.def)             Requested size: 156.49014pt x 124.53354pt.
-<img/Q3-116-1.png, id=83, 455.301pt x 122.1363pt>
+<img/Q3-116-1.png, id=80, 455.301pt x 122.1363pt>
 File: img/Q3-116-1.png Graphic file (type png)
 <use img/Q3-116-1.png>
-Package pdftex.def Info: img/Q3-116-1.png  used on input line 267.
+Package pdftex.def Info: img/Q3-116-1.png  used on input line 266.
 (pdftex.def)             Requested size: 455.29988pt x 122.136pt.
 
 
 [7 <./img/P3-116.png> <./img/Q3-116-1.png>]
-<img/Q3-116-2.png, id=91, 304.2567pt x 149.23755pt>
+<img/Q3-116-2.png, id=88, 304.2567pt x 149.23755pt>
 File: img/Q3-116-2.png Graphic file (type png)
 <use img/Q3-116-2.png>
-Package pdftex.def Info: img/Q3-116-2.png  used on input line 288.
+Package pdftex.def Info: img/Q3-116-2.png  used on input line 287.
 (pdftex.def)             Requested size: 304.25595pt x 149.23717pt.
 
 
@@ -1334,11 +1334,11 @@ Package rerunfilecheck Info: File `"2025-1 hw4".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30538 strings out of 473329
- 589007 string characters out of 5723857
- 1158334 words of memory out of 5000000
- 53116 multiletter control sequences out of 15000+600000
- 576223 words of font info for 102 fonts, out of 8000000 for 9000
+ 30532 strings out of 473329
+ 588908 string characters out of 5723857
+ 1158289 words of memory out of 5000000
+ 53113 multiletter control sequences out of 15000+600000
+ 575345 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,107p,10934b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
@@ -1355,19 +1355,16 @@ ist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/
 fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2024/texmf-dist/fonts/
 type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2024/texmf-dist/fonts/type1/
 public/nanumtype1/nanummjmb2.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
-/nanumtype1/nanummjmb9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanum
-type1/nanummjmbc.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/
-nanummjmc1.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanumm
-jmc2.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:
-/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texli
-ve/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/202
-4/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2024/texm
-f-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on "2025-1 hw4.pdf" (9 pages, 2461193 bytes).
+/nanumtype1/nanummjmbc.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmc1.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmc2.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmc5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:
+/texlive/2024/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
+Output written on "2025-1 hw4.pdf" (9 pages, 2355027 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
+ 216 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  17 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
