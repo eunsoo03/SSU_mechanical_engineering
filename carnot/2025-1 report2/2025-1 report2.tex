@@ -1,0 +1,308 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[top=1.1cm,headsep=0cm,bottom=1.1cm,footskip=0cm,left=1cm,right=1cm]{geometry}
+\usepackage{multicolrule} %다단 본문
+\usepackage{fontspec}
+	\setmathtt{exprdgs-italic.ttf}[BoldFont = exprdgs-bolditalic.ttf]
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage[abs]{overpic} %이미지 위 텍스트 삽입
+\usepackage{graphicx,color} %색상
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{mdframed, tcolorbox} %글상자
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
+
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+
+	\DeclareMathOperator{\snd}{s}
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\knpm}{kN/m}
+	
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\fer}{\!^\circ F}
+	\DeclareMathOperator{\kel}{K}
+	
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\cmpkg}{m^3/kg}
+	
+	\DeclareMathOperator{\nm}{N\cdot m}
+	
+	\DeclareMathOperator{\watt}{W}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	
+	\DeclareMathOperator{\joule}{J}
+	\DeclareMathOperator{\kj}{kJ}
+	\DeclareMathOperator{\jpkg}{J/kg}
+	\DeclareMathOperator{\kjpkg}{kJ/kg}
+	\DeclareMathOperator{\kjpkk}{kJ/kg\cdot K}
+	\DeclareMathOperator{\kps}{kg/s}
+	
+	\DeclareMathOperator{\satat}{sat\,@}
+	\DeclareMathOperator{\supat}{sup\,@}
+	\DeclareMathOperator{\comat}{com\,@}
+
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage{titlesec} %섹션 이름 변경
+\usepackage{kotex} %한글
+\usepackage{fancyhdr} %페이지 넘버 편집
+	\pagestyle{fancy}
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhf{}
+	\fancyhead[R]{p.\thepage}
+	\fancyfoot[R]{\color{red}[\LaTeX]}
+
+\setlength\columnsep{2cm}
+\SetMCRule{
+	width = 0.3mm,
+	color-model = rgb,
+	color = {0.9,0.9,0.9},
+	line-style = dashed
+	}
+	
+\newcommand{\solution}{\noindent\textbf{[Solution]}}
+
+\renewcommand{\section}[1] {
+	\vspace{\baselineskip}
+	\noindent\hspace{-1.0cm}\begin{overpic}{qframe.png}
+		\put(8mm,-0.3mm){
+			\begin{tcolorbox}[
+				boxsep = 0mm,
+				top = 0mm,
+				bottom = 0mm,
+				left = 0mm,
+				right = 0mm,
+				boxrule = 0mm,
+				colback = white,
+				colframe = blue,
+				width = 2.2cm,
+				height = 8mm,
+				halign = center,
+				valign = center,
+				sharp corners = all,
+				opacityfill = 0,
+				fontupper = \bfseries
+				]
+				{[ #1 ]}
+			\end{tcolorbox}
+		}
+	\end{overpic}
+}
+
+\makeatletter
+\renewcommand{\maketitle}{\setlength{\parindent}{0pt}
+	\begin{flushleft}
+		\LARGE{\textbf{\@title}}\\
+		\vspace{0.6cm}
+		\LARGE{\qquad\@author}
+		\vspace{0.5cm}
+	\end{flushleft}
+	\hspace{-1cm}\noindent\textcolor{red}{\rule{21cm}{0.5mm}}
+}
+\makeatother
+
+\title{열역학(다)\hspace{7cm} Report \#2}
+\author{기계공학부,\qquad 2022****,\qquad 2학년\qquad \begin{tabular}{ll}{\footnotesize 오류제보 : eunsoohong03@soongsil.ac.kr}\\[-11pt] {\footnotesize 작성날짜 : \today}\end{tabular}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols*}{2}
+
+\setlength{\parindent}{3mm}
+
+\noindent
+\textbf{\Large{}}\\[5pt]
+\textbf{\large{R2 - 1}}\\[5pt]
+\textbf{\large{R2 - 2}}\\[5pt]
+\textbf{\large{R2 - 3}}\\[5pt]
+\textbf{\large{R2 - 4}}\\
+
+\section{R2 - 1}
+	\vspace{-\baselineskip}
+	\begin{align*}
+		&\mathrm{H_2O}\text{,\quad steady flow}(\dot{m} = 12\kps),\quad Q = 0\\
+		&P_1 = 4\mpa, \quad T_1 = 500\cel,\quad V_1 = 80\mps\\
+		&P_2 = 30\kpa, \quad x_2 = 0.92,\quad V_2 = 50\mps
+	\end{align*}
+	(a) Find $\Delta\text{ke}$.\\
+	(b) Find $\dot{W}$.\\
+	(c) Find $A_1$.\\
+	
+	\solution
+	\begin{align*}
+		&\Delta\text{ke} = \Delta \left(\frac{V^2}{2}\right) = \frac{V_2^2 - V_1^2}{2} = \frac{50^2}{2} - \frac{80^2}{2}\\
+		&\quad = -1950.000 \approx -1.950\kjpkg\\
+		&T_{\satat 4\mpa} = 250.35\cel < T_1 \quad\Rightarrow\quad \text{superheated vapor}\\
+		&h_1 = h_{@\,4\mpa,500\cel} = 3446.0\kjpkg\\
+		&0< x_2 < 1 \quad\Rightarrow\quad \text{wet vapor}\\
+		&h_{2f} = h_{f@30\kpa} = 289.27\kjpkg\\
+		&h_{2fg} = h_{fg@30\kpa} = 2335.3\kjpkg\\
+		&h_2 = h_{2f} + xh_{2fg} = 289.27 + (0.92)(2335.4)\\
+		&\quad = 2437.838000 \approx 2437.8\kjpkg\\
+		&\cancel{q} + \left(h_1 + \frac{V_1^2}{2}\right) = \left(h_2 + \frac{V_2^2}{2}\right) + w\\
+		&\dot{W} = \dot{m}w = \dot{m}\left(h_1 - h_2 - \Delta\text{ke}\right)\\
+		&\quad = (12)\left(3446.0 - 2437.8 + 1.950\right)\\
+		&\quad = 12121.8000 \approx 12.122\,\mathrm{MW}\\
+		&\mathtt{v}_1 = \mathtt{v}_{@\,4\mpa,500\cel} = 0.08644\cmpkg\\
+		&\dot{\mathtt{V}} = \dot{m}\mathtt{v} = AV\\
+		&A_1 = \frac{\dot{m}\mathtt{v}_1}{V_1} = \frac{(12)(0.08644)}{80} = 0.012966000\\
+		&\quad \approx 0.01297\meter^2
+	\end{align*}
+
+\section{R2 - 2}
+	\vspace{-\baselineskip}
+	\begin{align*}
+		&\text{R-134a},\quad \mathtt{V} = \mathtt{V}_1 = \mathtt{V}_3 = 0.05\meter^3,\quad P_1 = 0.8\mpa\\
+		&x_1 = 1,\quad P_2 = 1.2\mpa,\quad T_2 = 40\cel,\quad P_3 = 1.2\mpa
+	\end{align*}
+	(a) Find $m_2$.\\
+	(b) Find $Q$.\\
+	
+	\solution
+	\begin{align*}
+		&x_1 = 1 \quad\Rightarrow\quad \text{saturated vapor}\\
+		&\mathtt{v}_1 = \mathtt{v}_{g@800\kpa} = 0.025645\cmpkg\\
+		&m_1 = \frac{\mathtt{V}}{\mathtt{v}_1} = \frac{0.05}{0.025645} = 1.9496977968 \approx 1.9497\kg\\
+		&h_1 = h_{f@800\kpa} = 95.48\kjpkg\\
+		&T_{\satat 1.2\mpa} = 46.29\cel > T_2 \quad\Rightarrow\quad \text{compressed liquid}\\
+		&h_2 \approx h_{f@40\cel} = 108.28\kjpkg\\
+		&\text{saturated liquid at state 3}\\
+		&\quad\Rightarrow\quad h_3 = h_{f@1.2\mpa} = 117.79\kjpkg\\
+		&\quad\Rightarrow\quad \mathtt{v}_3 = \mathtt{v}_{f@1.2\mpa} = 0.0008935\cmpkg\\
+		&m_3 = \frac{\mathtt{V}}{\mathtt{v}_3} = \frac{0.05}{0.0008935} = 55.9597090 \approx 55.960\kg\\
+		&m_3 = m_1 + m_2\\
+		&m_2 = m_3 - m_1 = 55.960 - 1.9497 = 54.0103000\\
+		&\quad \approx 54.010\kg\\
+		&Q + m_1h_1 + m_2h_2 = m_3h_3\\
+		&Q = m_3h_3 - m_1h_1 - m_2h_2\\
+		&\quad = (55.96)(117.79) - (1.9497)(95.48) - (54.01)(108.28)\\
+		&\quad = 557.168244 \approx 557.168\kj
+	\end{align*}
+
+\section{R2 - 3}
+	\vspace{-\baselineskip}
+	\begin{align*}
+		&\dot{m}_1 = 2\dot{m}_2,\quad T_1 = 20\cel,\quad T_2 = 45\cel\\
+		&P = 100\kpa,\quad Q = 0,\quad \text{steady flow}
+	\end{align*}
+	(a) Find the eq. of conservation of energy and mass.\\
+	(b) Find $T_3$.\\
+	
+	\solution
+	\begin{align*}
+		&\sum_i \dot{m} = \sum_e \dot{m}\quad\Rightarrow\quad \dot{m}_1 + \dot{m}_2 = \dot{m}_3\\
+		&\cancel{\dot{Q}} + \sum_i \dot{m}j = \sum_e \dot{m}j + \cancel{\dot{W}}\quad\Rightarrow\quad \dot{m}_1h_1 + \dot{m}_2h_2 = \dot{m}_3h_3\\
+		&T_{\satat 100\kpa} = 99.61\cel > T_2 > T_1\;\Rightarrow\; \text{compressed liquid}\\
+		&h_1 \approx h_{f@20\cel} = 83.915\kjpkg\\
+		&h_2 \approx h_{f@45\cel} = 188.44\kjpkg
+	\end{align*}
+	These equations can be combined to an equation;
+	\begin{align*}
+		&2\dot{m}_2h_1 + \dot{m}_2h_2 = 3\dot{m}_2h_3\\
+		&2h_1 + h_2 = 3h_3\\
+		&h_3 = \frac{2h_1 + h_2}{3} = \frac{2(83.915) + (188.44)}{3} = 118.7566667\\
+		&\quad \approx 118.757\kjpkg
+	\end{align*}
+	@\;$P = 100\kpa$ \quad \begin{tabular}{|c|c|}
+		\hline
+		$T\,[\,\cel]$ & $h\,[\kjpkg]$\\
+		\hline
+		$25$ & $104.830$\\
+		\hline
+		$T_3$ & $118.753$ \\
+		\hline
+		$30$ & $125.730$\\
+		\hline
+	\end{tabular}
+	\begin{align*}
+		&T_3 = \frac{118.753 - 104.83}{125.73 - 104.83}(30 - 25) + 25 = 28.33086124\\
+		&\quad \approx 28.33\cel
+	\end{align*}
+		
+	
+	
+\section{R2 - 4}
+	\vspace{-\baselineskip}
+	\begin{align*}
+		&\text{Air},\quad m = 3\kg,\quad P_1 = 100\kpa,\quad T_1 = 310\kel\\
+		&P_2 = 500\kpa,\quad T_2 = 490\kel
+	\end{align*}
+	Determine $\Delta S$\\
+	(a) when $\kappa = 1.4 = \text{const.}$\\
+	(b) using value from air table.\\
+	(c) using average specific heat.\\
+	
+	\solution
+	\begin{align*}
+		&P\mathtt{v} = RT,\quad Tds = \delta q,\quad \delta q = dh - \mathtt{v}dP\\
+		&\Rightarrow\quad ds = \frac{dh}{T} - \frac{\mathtt{v}}{T}dP = \frac{c_pdT}{T} - \frac{R}{P}dP
+	\end{align*}
+	(a) If $\kappa = 1.4 = \text{const.}$,
+	\begin{align*}
+		&\Delta S = m\int^2_1 ds = m\left(c_p\int^2_1 \frac{1}{T}dT - R\int^2_1 \frac{1}{P}dP\right)\\
+		&\quad = m\left(\frac{\kappa R}{\kappa - 1}\ln\frac{T_2}{T_1} - R\ln\frac{P_2}{P_1}\right)\\
+		&\quad = mR\left(\frac{\kappa}{\kappa - 1}\ln\frac{T_2}{T_1} - \ln\frac{P_2}{P_1}\right)\\
+		&\quad = (3)(0.2870)\left\{\frac{1.4}{1.4-1}\ln\frac{490}{310} - \ln\frac{500}{100}\right\}\\
+		&\quad = -0.00604601 \approx -0.006046\,\mathrm{kJ/K}
+	\end{align*}
+	(b) Using Table A-17, $\Delta S$ can be expressed to
+	\begin{align*}
+		&\Delta S = m\left\{s^{\text{o}}(T_2) - s^{\text{o}}(T_1) - R\ln\frac{P_2}{P_1}\right\}\\
+		&\quad = (3)\left\{2.19876 - 1.73498 - (0.2870)\ln\frac{500}{100}\right\}\\
+		&\quad = 0.00561395 \approx 0.005614\,\mathrm{kJ/K}
+	\end{align*}
+	(c) Using Table A-2,
+	\begin{align*}
+		&\bar{c}_p(T_1) = 28.11 + 0.1967\times10^{−2}(310)\\
+		&+ 0.4802\times10^{−5}(310)^2 − 1.966\times10^{−9}(310)^3\\
+		&\quad = 29.12267309 \approx 29.123\,\mathrm{kJ/kmol\cdot K}\\
+		&\bar{c}_p(T_2) = 28.11 + 0.1967\times10^{−2}(490)\\
+		&+ 0.4802\times10^{−5}(490)^2 − 1.966\times10^{−9}(490)^3\\
+		&\quad = 29.99549227 \approx 29.995\,\mathrm{kJ/kmol\cdot K}\\
+		&c_p = \frac{\bar{c}_p(T_1) + \bar{c}_p(T_2)}{2M} = \frac{29.123 + 29.995}{2(28.97)}\\
+		&\quad = 1.020331377 \approx 1.020\kjpkk\\
+		&\Delta S = m\left(c_p\ln\frac{T_2}{T_1} - R\ln\frac{P_2}{P_1}\right)\\
+		&\quad = (3)\left\{(1.020)\ln\frac{490}{310} - (0.2870)\ln\frac{500}{100}\right\}\\
+		&\quad = 0.0152432 \approx 0.01524\,\mathrm{kJ/K}
+	\end{align*}
+
+
+
+\end{multicols*}
+\end{document}

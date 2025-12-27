@@ -1,0 +1,187 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage{graphicx} %색상
+\usepackage{overpic}
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{mdframed, tcolorbox} %글상자
+\usepackage[yyyymmdd]{datetime}
+	\renewcommand{\dateseparator}{--}
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+	
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\knpm}{kN/m}
+	\DeclareMathOperator{\kph}{km/h}
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\tkph}{kph}
+	\DeclareMathOperator{\tmps}{mps}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\nm}{N\cdot m}
+	\DeclareMathOperator{\knm}{kN\cdot m}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\snd}{s}
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage{titlesec} %섹션 이름 변경
+	\titlespacing*{\section}{3mm}{0mm}{1mm}
+	\titleformat{\section}{\bfseries\large}{}{0ex}{}
+\usepackage{kotex} %한글
+
+\newcommand{\prob}[2]{\section{#1}\begin{mdframed}#2\end{mdframed}}
+
+\newlength{\picwidth}
+\newcommand{\probpic}[4]{
+	\setlength{\picwidth}{145mm}\addtolength{\picwidth}{-#3}\section{#1}\begin{mdframed}\begin{tabular}{m{#3}m{\picwidth}}
+	\includegraphics[width = #3]{#2} & #4\end{tabular}\end{mdframed}
+	}
+	
+\newcommand{\asw}[2]{
+	\begin{flushright}
+		#1\quad#2\quad$\blacktriangleleft$
+	\end{flushright}
+	}
+
+\title{\vspace{100pt}\Huge{해설}}
+\author{
+	동역학(이동훈 교수님) 2025-1 기말고사\\[10pt]
+	시험 실시 : 2025-06-10 18:30-20:30+$\alpha$\;(120분+$\alpha$)\\[60pt]
+	기계공학과 2학년 2022**** ***\\[20pt]
+	\\[10pt]
+	\\[60pt]
+	}
+\date{\today}
+
+\begin{document}
+	
+\renewcommand*{\titlepagestyle}{empty}
+\maketitle
+
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{SSU symbol KR-EN.jpg}
+\end{center}
+
+\newpage\setcounter{page}{1}
+
+\probpic{Question 1 | Prob. 14.45 in textbook}{img/q01.png}{70mm}{
+	The 2-kg sub-satellite $B$ has an initial velocity $\mathbf{v}_B = 3\mps \mathbf{j}$. It is connected to the 20-kg base-satellite $A$ by a 500-m space tether. Determine the velocity of the base satellite and sub-satellite immediately after the tether becomes taut (assuming no rebound).
+	}
+	\noindent\textbf{[SOLUTION]}
+	\begin{align*}
+		&m_A = 20\kg,\quad m_B = 2\kg\\
+		&\mathbf{L} = m_B\mathbf{v}_B = m_A\mathbf{v}_A' + m_B\mathbf{v}_B'\\
+		&\mathbf{v}_A' = v_A'\measuredangle\arctan\frac{4}{3} = \frac{3}{5}v_A'\mathbf{i} + \frac{4}{5}v_A'\mathbf{j}\\
+		&L_x = 0 = \frac{3}{5}m_Av_A' + m_Bv'_{B,x}\\
+		&L_y = m_Bv_B = \frac{4}{5}m_Av_A' + m_Bv'_{B,y}\\
+		&\quad\Rightarrow\quad v_{B,x}' = -\frac{3m_A}{5m_B}v_A' = -\frac{3(20)}{5(2)}v_A' = -6v_A'\\
+		&\quad\Rightarrow\quad v_{B,y}' = v_B -\frac{4m_A}{5m_B}v_A' = 3\mps - \frac{4(20)}{5(2)}v_A' = 3\mps-8v_A'\\
+		&\mathbf{v}_{B/A} = \mathbf{v}_B' - \mathbf{v}_A' = \left(v_{B,x} - \frac{3}{5}v_A'\right)\mathbf{i} + \left(v_{B,y} - \frac{4}{5}v_A'\right)\mathbf{j} = v_{B/A}'\measuredangle\left(\arctan\frac{3}{4}+90\dgr\right)\\
+		&\quad\Rightarrow\quad -\frac{v'_{B,y} - \frac{4}{5}v_A'}{v'_{B,x} - \frac{3}{5}v_A'} = -\frac{3\mps - 8.8v'_A}{-6.6v_A'} = \frac{3}{4}\\
+		&4(3\mps - 8.8v'_A) = 3(6.6v_A')\\
+		&v_A' = \frac{12}{4(8.8) + 3(6.6)}\mps = \frac{12}{55}\mps = 0.218\mps\\
+		&\theta_A = \arctan\frac{3}{4} = 36.9\dgr\\
+		&v_B' = \sqrt{v_{B,x}'^2 + v_{B,y}'^2} = \sqrt{(6v_A')^2 + (3\mps - 8v_A')^2} = 1.813\mps\\
+		&\theta_B = \arctan\frac{v_{B,y}'}{-v_{B,x}'} = \arctan\frac{3\mps - 8v_A'}{6v_A'} = 43.8\dgr\\
+		&180\dgr - \theta_B = 136.2\dgr
+	\end{align*}
+	\asw{}{$\mathbf{v}'_A = 0.218\mps\measuredangle36.9\dgr$}
+	\asw{}{$\mathbf{v}'_B = 1.813\mps\measuredangle136.2\dgr$}
+	
+\newpage
+
+\probpic{Question 2 | Prob. 14.40 in textbook}{img/q02.png}{35mm}{
+	A 20-kg block $B$ is suspended from a 2-m cord attached to a 30-kg cart $A$, which may roll freely on a frictionless, horizontal track. If the system is released from rest in the position shown, determine the velocities of $A$ and $B$ as $B$ passes directly under $A$.
+	}
+	\noindent\textbf{[SOLUTION]}\\[10pt]
+	\noindent Let the state 1 be the initial state and the state 2 be when $B$ passes directly under $A$.
+	\begin{align*}
+		&\cancelto{0}{T_1} + V_{g1} = T_2 + \cancelto{0}{V_{g2}}\\
+		&m_Bgl(1-\cos25\dgr) = \frac{1}{2}m_Av_A^2 + \frac{1}{2}m_Bv_B^2\\
+		&m_Av_A^2 + m_Bv_B^2 = 2m_Bgl(1-\cos25\dgr)\tag{1}
+	\end{align*}
+	\noindent Impulses by gravity and ground are independent to horizontal component of momentum of $A$ and $B$.
+	\begin{align*}
+		&\sum p_{x1} = \sum p_{x2}\\
+		&0 = -m_Av_A + m_Bv_B\tag{2}\\
+		&\left\{\begin{array}{l}
+			m_Av_A^2 + m_Bv_B^2 = 2m_Bgl(1-\cos25\dgr)\\[5pt]
+			-m_Av_A + m_Bv_B = 0
+		\end{array}\right.\tag{1 \& 2}\\
+		&m_Av_A = m_Bv_B\\
+		&m_Am_Bv_A^2 + m_A^2v_A^2 = 2m_B^2gl(1-\cos25\dgr)\\
+		&\frac{m_A}{m_B}v_A^2 + \left(\frac{m_A}{m_B}\right)^2v_A^2 = 2gl(1-\cos25\dgr)\\
+		&k(k+1)v_A^2 = 2gl(1-\cos25\dgr),\qquad k = \frac{m_A}{m_B} = 1.5\\
+		&v_A = \sqrt{\frac{2gl(1-\cos25\dgr)}{k(k+1)}} = \sqrt{\frac{2(9.81)(2)(1-\cos25\dgr)}{(1.5)(2.5)}}\mps = 0.990\mps\\
+		&v_B = \frac{m_A}{m_B}v_A = kv_A = (1.5)(0.990)\mps = 1.485\mps
+	\end{align*}
+	\asw{}{$\mathbf{v}_A = 0.990\mps\leftarrow$}
+	\asw{}{$\mathbf{v}_B = 1.485\mps\rightarrow$}
+	
+	
+\newpage
+
+\probpic{Question 3 | variation of Prob. 15.176 in textbook}{img/q03.png}{60mm}{
+	Knowing that at the instant shown the rod attached at $A$ has an angular velocity of $5\,\mathrm{rad/s}$ counterclockwise and an angular acceleration of $2\,\mathrm{rad/s^2}$ clockwise, determine the acceleration of point $D$. (Length of the boom $BD$ is $1000\mm$.)
+	}
+
+\newpage
+
+\probpic{Question 4 | Prob. 15.171 in textbook}{img/q04.png}{60mm}{
+	The human leg can be crudely approximated as two rigid bars (the femur and the tibia) connected with a pin joint. At the instant shown the veolcity and acceleration of the ankle is zero. During a jump, the velocity of the ankle $A$ is zero, the tibia $AK$ has an angular velocity of $1.5\,\mathrm{rad/s}$ counterclockwise and an angular acceleration of $1\,\mathrm{rad/s^2}$ counterclockwise. Determine the relative angular velocity and angular acceleration of the femur $KH$ with respect to $AK$ so that the velocity and acceleration of $H$ are both straight up at the instant shown.\newline
+	
+	*femur : 대퇴골, ankle : 발목, tibia : 정강이 뼈
+}
+	\noindent\textbf{[SOLUTION]}\\[10pt]
+	Let angluars be positive when they are conterclockwise. The origin of all fixed frame is point $A$.
+	\begin{align*}
+		\text{Given :}\quad & H = 7l,\quad h = 6l,\quad v_A = 0,\quad \bm{\Omega} = \bm{\omega}_{AK} = 1.5\mathbf{k}\snd^{-1},\quad \dot{\bm{\Omega}} = \dot{\bm{\omega}}_{AK} = 1\mathbf{k}\snd^{-2}\\
+		&\theta_{AK} = 45\dgr,\quad \theta_{KH} = 135\dgr,\quad \dot{r}_{Hx} = 0,\quad \ddot{r}_{Hx} = 0\\
+	\text{Determine :}\quad & \bm{\omega} = \bm{\omega}_{KH/AK},\quad \dot{\bm{\omega}} = \dot{\bm{\omega}}_{KH/AK}
+	\end{align*}
+	\begin{align*}
+		&\dot{\mathbf{r}}_H = \dot{\mathbf{r}}_H' + 	\dot{\mathbf{r}}_{H}|_{AK} = \bm{\Omega}\times\mathbf{r}_{H/A} + \bm{\omega}\times\mathbf{r}_{H/K}\\
+		&\quad\; = \Omega l(-13\mathbf{i} - \mathbf{j}) + \omega l(-7\mathbf{i} - 7\mathbf{j}) = l(-13\Omega - 7\omega)\mathbf{i} + l(-\Omega - 7\omega)\mathbf{j}\\
+		&\dot{r}_{Hx} = l(-13\Omega - 7\omega) = 0,\quad \omega = -\frac{13}{7}\Omega = -\frac{39}{14}\,\mathrm{rad/s} = -2.786\,\mathrm{rad/s}\\
+		&\dot{r}_{Hy} = l(-\Omega - 7\omega)\\
+		&\dot{\mathbf{r}}_{H}|_{AK} = \bm{\omega}\times\mathbf{r}_{H/K}\\
+		&\ddot{\mathbf{r}}_H = \ddot{\mathbf{r}}_H' + \ddot{\mathbf{r}}_{H}|_{AK}\\
+		&\quad\; =  \left[\bm{\Omega}\times(\bm{\Omega}\times\mathbf{r}_{H/A}) +2\bm{\Omega}\times\dot{\mathbf{r}}_H|_{AK} + \dot{\bm{\Omega}}\times\mathbf{r}_{H/A}\right] +  \left[\bm{\omega}\times\left(\bm{\omega}\times\mathbf{r}_{H/K}\right) + \dot{\bm{\omega}}\times\mathbf{r}_{H/K}\right]\\
+		&\quad\; = \left[\bm{\Omega}\times(\bm{\Omega}\times\mathbf{r}_{H/A}) +2\bm{\Omega}\times(\bm{\omega}\times\mathbf{r}_{H/K}) + \dot{\bm{\Omega}}\times\mathbf{r}_{H/A}\right] + [\bm{\omega}\times\left(\bm{\omega}\times\mathbf{r}_{H/K}\right) + \dot{\bm{\omega}}\times\mathbf{r}_{H/K}]\\
+		&\quad\; = \left[\Omega^2l(\mathbf{i} - 13\mathbf{j}) + 2\Omega\omega l(-7\mathbf{i} + 7\mathbf{j}) + \dot{\Omega}l(-13\mathbf{i} - \mathbf{j})\right] + \left[\omega^2 l(7\mathbf{i} - 7\mathbf{j}) + \dot{\omega}l(-7\mathbf{i} - 7\mathbf{j})\right]\\
+		&\quad\; = \left(\Omega^2l -14\Omega\omega l - 13\dot{\Omega}l + 7\omega^2l - 7\dot{\omega}l\right)\mathbf{i} + \left(-13\Omega^2l +14\Omega\omega l  -\dot{\Omega}l -7\omega^2l - 7\dot{\omega}l\right)\mathbf{j}\\
+		&\ddot{r}_{Hx} = \Omega^2l -14\Omega\omega l - 13\dot{\Omega}l + 7\omega^2l - 7\dot{\omega}l = 0\\
+		&\dot{\omega} = \frac{\Omega^2l - 14\Omega\omega l - 13\dot{\Omega}l + 7\omega^2l}{7l} = \frac{\Omega^2 - 13\dot{\Omega}}{7} - 2\Omega\omega + \omega^2 = -2.133\,\mathrm{rad/s^2}
+	\end{align*}
+	\asw{}{$\bm{\omega} = 2.786\,\mathrm{rad/s} \circlearrowright$}
+	\asw{}{$\dot{\bm{\omega}} = 2.133\,\mathrm{rad/s^2}\circlearrowright$}
+
+\end{document}

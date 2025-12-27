@@ -1,0 +1,171 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage{graphicx} %색상
+\usepackage{overpic}
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{mdframed, tcolorbox} %글상자
+\usepackage[yyyymmdd]{datetime}
+	\renewcommand{\dateseparator}{--}
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+	
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\knpm}{kN/m}
+	\DeclareMathOperator{\kph}{km/h}
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\tkph}{kph}
+	\DeclareMathOperator{\tmps}{mps}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\nm}{N\cdot m}
+	\DeclareMathOperator{\knm}{kN\cdot m}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\snd}{s}
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage{titlesec} %섹션 이름 변경
+	\titlespacing*{\section}{3mm}{0mm}{1mm}
+	\titleformat{\section}{\bfseries\large}{}{0ex}{}
+\usepackage{kotex} %한글
+
+\newcommand{\prob}[2]{\section{#1}\begin{mdframed}#2\end{mdframed}}
+
+\newlength{\picwidth}
+\newcommand{\probpic}[4]{
+	\setlength{\picwidth}{145mm}\addtolength{\picwidth}{-#3}\section{#1}\begin{mdframed}\begin{tabular}{m{#3}m{\picwidth}}
+	\includegraphics[width = #3]{#2} & #4\end{tabular}\end{mdframed}
+	}
+	
+\newcommand{\asw}[2]{
+	\begin{flushright}
+		#1\quad$\blacktriangleleft$\quad#2
+	\end{flushright}
+}
+
+\newcommand{\aswtag}[1]{
+	\quad\blacktriangleleft\quad#1
+}
+
+\title{\vspace{100pt}\Huge{HW2}}
+\author{
+	2025-1 고체역학(박성훈 교수님)\\[10pt]
+	Sample Problem 2.1, Problem 2.1, 2.3, 2.9, 2.37, 2.60\\[100pt]
+	오류 제보\quad eusnoohong03@soongsil.ac.kr\\
+	}
+\date{\today}
+
+\begin{document}
+	
+\renewcommand*{\titlepagestyle}{empty}
+\maketitle
+
+\vspace{60pt}
+
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{SSU symbol KR-EN.jpg}
+\end{center}
+
+\newpage\setcounter{page}{1}
+
+\setlength{\parindent}{0pt}
+
+\prob{Problem 2.1}{A 2.2-m-long steel rod must not stretch more than $1.2\mm$ when it is subjected to an 8.5-kN tension force. Knowing that $E = 200\gpa$, determine ($a$) the smallest diameter rod that should be used, ($b$) the corresponding normal stress in the rod.}
+
+\begin{align*}
+	&P = 8.5\kn,\quad L = 2.2\meter,\quad \delta_\text{max} = 1.2\mm,\quad A = \frac{\pi}{4}d^2\\
+	&\delta = \frac{PL}{EA} \quad\Rightarrow\quad \delta_\text{max} = \frac{PL}{EA_\text{min}} \quad\\
+	&\Rightarrow\quad A_\text{min} = \frac{PL}{E\delta_\text{max}} = \frac{(8.5\kn)(2.2\meter)}{(200\gpa)(1.2\mm)} = \frac{(8.5\times10^3)(2.2)}{(200\times10^9)(0.0012)}\meter^2 = 7.79167 \times 10^{-5}\meter^2\\
+	&A = \frac{\pi}{4}d^2 \quad\Rightarrow\quad d_\text{min} = \sqrt{\frac{4A_\text{min}}{\pi}} = \sqrt{\frac{4(7.79167 \times 10^{-5})}{\pi}}\meter = 9.96025\times10^{-3}\meter = 9.96\mm\\
+	&\hspace{140mm}\blacktriangle\quad(a)\\
+	&\sigma_\text{max} = \frac{P}{A_\text{min}} = \frac{8.5\kn}{7.79167 \times 10^{-5}\meter^2} = \frac{8.5\times10^3}{7.79167 \times 10^{-5}}\pa = 109.0909\times10^6\pa = 109.1\mpa\\
+	&\hspace{140mm}\blacktriangle\quad(b)
+\end{align*}
+
+\vspace{10pt}
+
+\prob{Problem 2.3}{A 9-m length of 6-mm-diameter steel wire is to be used in a hanger. It is observed that the wire stretches $18\mm$ when a tensile force $P$ is applied. Knowing that $E = 200\gpa$, determine ($a$) the magnitude of the force $P$, ($b$) the corresponding normal stress in the wire.}
+
+\begin{align*}
+	&L = 9\meter,\quad d = 6\mm,\quad \delta = 18\mm,\quad A = \frac{\pi}{4}d^2 = \frac{\pi}{4}(6\mm)^2 = 9\pi\mm^2\\
+	&\delta = \frac{PL}{EA} \quad\Rightarrow\quad P = \frac{\delta EA}{L} = \frac{(18\mm)(200\gpa)(9\pi\mm^2)}{9\meter} = \frac{(0.018)(200\times10^9)(9\pi\times10^{-6})}{9}\newton\\
+	&\hspace{31mm} = 11.30973\newton = 11.31\kn\aswtag{(a)}\\
+	&\sigma = \frac{P}{A} = \frac{11.30973\newton}{9\pi\mm^2} = \frac{11.30973}{9\pi\times10^{-6}}\pa = 400.000\times10^{6}\pa = 400\mpa\aswtag{(b)}
+\end{align*}
+
+\vspace{10pt}
+
+\prob{Problem 2.9}{A 9-kN tensile load will be applied to a 50-m length of steel wire with $E = 200\gpa$. Determine the smallest diameter wire that can be used, knowing that the normal stress must not exceed $150\mpa$ and that the increase in length of the wire must not exceed $25\mm$.}
+
+For maximum $\delta$,
+\begin{align*}
+	&\delta_m = \frac{PL}{EA_m} = \frac{4PL}{\pi Ed_m^2}\quad\Rightarrow\quad d_m = \sqrt{\frac{4PL}{\pi E\delta_m}} = \sqrt{\frac{4(9000)(50)}{\pi(200\times10^9)(0.025)}}\meter = 10.70\mm
+\end{align*}
+For maximum $\sigma$,
+\begin{align*}
+	&\sigma_m = \frac{P}{A_m} = \frac{4P}{\pi d_m^2}\quad\Rightarrow\quad d_m = \sqrt{\frac{4P}{\pi \sigma_m}} = \sqrt{\frac{4(9000)}{\pi(150\times10^6)}}\meter = 8.74\mm
+\end{align*}
+Considering these two conditions,
+\begin{align*}
+	10.70\mm>8.74\mm \quad\Rightarrow\quad d_m = 8.74\mm\aswtag{}
+\end{align*}
+
+\newpage
+
+\probpic{Problem 2.37}{img/p02-037.png}{50mm}{An axial force of $60\kn$ is applied to the assembly shown by means of rigid end plates. Determine ($a$) the normal stress in the brass shell, ($b$) the corresponding deformation of the assembly.}
+
+The word `rigid end plates' from the text means that $\delta$ is the same in both the steel core and the brass shell.
+\begin{align*}
+	&A_s = (20\mm)^2 = 400\mm^2,\quad A_b = (30\mm)^2 - (20\mm)^2 = 500\mm^2\\
+	&P = 60\kn = P_s + P_b\\
+	&\delta = \frac{P_sL}{E_sA_s} = \frac{P_bL}{E_bA_b}\quad\Rightarrow\quad P_s = \frac{\delta E_s A_s}{L},\quad P_b = \frac{\delta E_b A_b}{L}\quad\Rightarrow\quad P_s : P_b = E_sA_s : E_bA_b\\
+	&\Rightarrow\quad P_b = \frac{PE_bA_b}{E_sA_s + E_bA_b} \quad\Rightarrow\quad \sigma_b = \frac{P_b}{A_b} = \frac{PE_b}{E_sA_s + E_bA_b} = \frac{P}{\frac{E_s}{E_b}A_s + A_b}\\
+	&\qquad = \frac{60\times10^3}{\frac{200}{105}(0.0004) + 0.0005}\pa = 47.5472\times10^6\pa = 47.5\mpa\aswtag{(a)}\\
+	&\delta = \varepsilon_bL = \frac{\sigma_bL}{E_b} = \frac{(47.5472\times10^6)(0.25)}{105\times10^9}\meter = 0.1132\mm\aswtag{(b)}
+\end{align*}
+
+\newpage
+
+\probpic{Problem 2.60}{img/p02-060.png}{55mm}{At room temperature ($20\cel$) a 0.5-mm gap exists between the ends of the rods shown. At a later time when the temperature has reached $140\cel$, determine ($a$) the normal stress in the aluminum rod, ($b$) the change in length of the aluminum rod.}
+\begin{align*}
+	&\Delta T = 140\cel - 20\cel = 120\cel\\
+	&\delta_{T,A} = \alpha_a(\Delta T)L_A = (23\times10^{-6})(120)(300\mm) = 0.828\mm\\
+	&\delta_{T,B} = \alpha_s(\Delta T)L_B = (23\times10^{-6})(120)(300\mm) = 0.519\mm\\
+	&\delta_T = \delta_{T,A} + \delta_{T,B} = 1.347\mm\\
+	&\delta = \delta_T + \delta_P \quad\Rightarrow\quad \delta_P = \delta - \delta_T = 0.5\mm - 1.347\mm = -0.847\mm\\
+	&\delta_P = \delta_{P,A} + \delta_{P,B} = \frac{PL_A}{E_aA_A} + \frac{PL_B}{E_sA_B} \quad\Rightarrow\quad \delta_P = \frac{P}{A_A}\left(\frac{L_A}{E_a} + \frac{L_BA_A}{E_sA_B}\right)\\
+	&\sigma_A = \frac{P}{A_A} = \delta_P\left(\frac{L_A}{E_a} + \frac{L_B}{E_s}\cdot\frac{A_A}{A_B}\right)^{-1} = (-0.847\mm)\left(\frac{300\mm}{75\gpa} + \frac{250\mm}{190\gpa}\cdot\frac{2000\mm^2}{800\mm^2}\right)^{-1}\\
+	&\quad = -0.847\left(\frac{300}{75} + \frac{250}{190}\cdot\frac{20}{8}\right)^{-1}\gpa = -0.1161949\gpa =-116.2\mpa\aswtag{(a)}\\
+	&\delta_{P,A} = \varepsilon_A L_A = \frac{\sigma_AL_A}{E_a} = \frac{(-0.1161949\gpa)(300\mm)}{75\gpa} = \frac{(-0.1161949)(300)}{75}\mm = -0.465\mm\\
+	&\delta_A = \delta_{T,A} + \delta_{P,A} = -0.465\mm + 0.828\mm = 0.363\mm\aswtag{(b)}
+\end{align*}
+
+\end{document}

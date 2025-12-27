@@ -1,0 +1,152 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage{graphicx} %색상
+\usepackage{overpic}
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{mdframed, tcolorbox} %글상자
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+	
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\knpm}{kN/m}
+	\DeclareMathOperator{\kph}{km/h}
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\tkph}{kph}
+	\DeclareMathOperator{\tmps}{mps}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\nm}{N\cdot m}
+	\DeclareMathOperator{\knm}{kN\cdot m}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\snd}{s}
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage{titlesec} %섹션 이름 변경
+	\titlespacing*{\section}{3mm}{0mm}{1mm}
+	\titleformat{\section}{\bfseries\large}{}{0ex}{}
+\usepackage{kotex} %한글
+
+\title{\vspace{100pt}\Huge{HW7}}
+\author{
+	2025-1 고체역학(박성훈 교수님)\\[10pt]
+	Concept Aplication 6.2, Problem 6.18, 6.19\\[100pt]
+	오류 제보 : eunsoohong03@soongsil.ac.kr\\
+	}
+\date{\today}
+
+\begin{document}
+	
+\renewcommand*{\titlepagestyle}{empty}
+\maketitle
+\setlength{\parindent}{3mm}
+
+\vspace{60pt}
+
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{SSU symbol KR-EN.jpg}
+\end{center}
+
+\newpage
+\setcounter{page}{1}
+
+\section{Concept Aplication 6.2}
+	\begin{mdframed}
+	\begin{tabular}{m{70mm}m{75mm}}
+		\includegraphics[width = 70mm]{img/ca6-2.jpg}
+		&
+		Knowing that the allowable shearing stress for the timber beam Sample Prob. 5.7 is $\tau_\text{all} = 1.75\mpa$, check that the design is acceptable from the point of view of the shearing stresses.\newline\phantom{.}\quad Recall from the shear diagram of Sample Prob. 5.7 that $V_\text{max} = 20\kn$. The actual width of the beam was given $b = 90\mm$, and the value obtained for its depth was $h = 366\mm$.
+	\end{tabular}
+	\end{mdframed}
+	\begin{align*}
+		&\tau_\text{max} = \frac{V_\text{max}Q_\text{half}}{bI} = \frac{V_\text{max}\cdot\frac{h}{4}\cdot\frac{bh}{2}}{b\left(\frac{1}{12}bh^3\right)} = \frac{3V_\text{max}}{2bh} = \frac{3(20\kn)}{2(90\mm)(366\mm)} = 0.911\mpa\\
+		&\tau_\text{max} < \tau_\text{all}\quad\Rightarrow\quad \text{Acceptable} \quad\blacktriangleleft
+	\end{align*}
+	
+\newpage
+
+\section{Problem 6.18}
+\begin{mdframed}
+	\begin{tabular}{m{85mm}m{60mm}}
+		\includegraphics[width = 85mm]{img/p6-18.jpg}
+		&
+		For the beam and loading shown, determine the minimum required width $b$, knowing that for the grade of timber used, $\sigma_\text{all} = 12\mpa$ and $\tau_\text{all }= 825\kpa$.
+	\end{tabular}
+\end{mdframed}
+	\begin{align*}
+		&+\circlearrowleft\sum M|_A = -(2.4\kn)(1\meter) - (4.8\kn)(2\meter) + R_D(3\meter) - (7.2\kn)(3.5\meter) = 0\\
+		&\quad\Rightarrow\quad R_D = 12.4\kn\\
+		&+\uparrow\sum F_y = R_A + R_D - 2.4\kn - 4.8\kn - 7.2\kn = 0\\
+		&\quad\Rightarrow\quad R_A = 2\kn\\
+		&V(x) = \left\{
+		\begin{array}{rl}
+			2\kn, & 0\meter \leq x < 1\meter\\
+			-0.4\kn, & 1\meter \leq x < 2\meter\\
+			-5.2\kn, & 2\meter \leq x < 3\meter\\
+			7.2\kn, & 3\meter \leq x < 3.5\meter
+		\end{array}\right.
+		\quad\Rightarrow\quad |V|_\text{max} = 7.2\kn\\
+		&M(1\meter) = (2\kn)(1\meter) = 2\knm\\
+		&M(3\meter) = -(7.2\kn)(0.5\meter) = -3.6\knm\\
+		&\quad\Rightarrow\quad |M|_\text{max} = 3.6\knm\\
+		&\sigma_\text{max} = \frac{|M|_\text{max}c}{I} = \frac{3|M|_\text{max}}{2bc^2} \leq \sigma_\text{all}\\
+		&b \geq \frac{3|M|_\text{max}}{2\sigma_\text{all}c^2} = \frac{3(3.6\knm)}{2(12\mpa)(75\mm)^2} = \frac{3(3.6)}{2(12)(75)^2}\times10^{6} \mm= 80.0\mm\\
+		&\tau_\text{max,avg} = \frac{|V|_\text{max}Q}{tI} = \frac{3|V|_\text{max}}{2bh} \leq \tau_\text{all}\\
+		&b\geq \frac{|V|_\text{max}Q}{tI} = \frac{3|V|_\text{max}}{2\tau_\text{all}h} = \frac{3(7.2\kn)}{2(0.825\mpa)(150\mm)} = \frac{3(7.2)}{2(0.825)(150)}\times10^3\mm = 87.3\mm\\
+		&\quad\Rightarrow\quad b_{\min{}} = 87.3\mm,\quad \text{Use}\quad b = 88\mm\quad\blacktriangleleft
+	\end{align*}
+
+\newpage
+
+\section{Problem 6.19}
+	\begin{mdframed}
+	\begin{tabular}{m{65mm}m{80mm}}
+		\includegraphics[width = 65mm]{img/p6-19.jpg}
+		&
+		A timber beam $AB$ of length $L$ and rectangular cross section carries a single concentrated load $P$ at its midpoint $C$. ($a$) Show that the ratio $\tau_m/\sigma_m$ of the maximum values of the shearing and normal stresses in the beam is equal to $h/2L$, where $h$ and $L$ are, respectively, the depth and the length of the beam. ($b$) Determine the depth $h$ and the width $b$ of the beam, knowing that $L = 2\meter$, $P = 40\kn$, $\tau_m = 960\kpa$, and $\sigma_m = 12\mpa$.
+	\end{tabular}
+	\end{mdframed}
+	\begin{align*}
+		&R_A = R_B = \frac{P}{2}\\
+		&V(x) = \left\{\begin{array}{rl}\cfrac{P}{2} & \left(0 \leq x < \cfrac{L}{2}\right)\\[15pt]
+		-\cfrac{P}{2}  & \left(\cfrac{L}{2} \leq x < L\right) \end{array}\right.
+		\quad\Rightarrow\quad |V|_\text{max} = V_m = \frac{P}{2},\quad |M|_\text{max} = M(L/2) = M_m = \frac{PL}{4}\\
+		&\tau_m = \frac{3V_m}{2bh} = \frac{3P}{8bc},\quad \sigma_m = \frac{M_m c}{I} = \frac{3M_m}{2bc^2} = \frac{3PL}{8bc^2}\\
+		&\frac{\tau_m}{\sigma_m} = \frac{c}{L} = \frac{h}{2L}\quad\blacktriangleleft\quad(a)\\
+		&\left.\begin{array}{l}
+			\displaystyle h = \frac{\tau_m}{\sigma_m}\cdot 2L = \frac{0.96\mpa}{12\mpa}\cdot2(2\meter) = 0.32\meter = 320\mm\\[10pt]
+			\displaystyle b = \frac{3P}{4h\tau_m} = \frac{3(40\kn)}{4(320\mm)(0.96\mpa)} = \frac{3(40)}{4(320)(0.96)}\times10^3\mm = 97.7\mm
+		\end{array}\right\} \quad\blacktriangleleft\quad(b)
+	\end{align*}
+
+\end{document}

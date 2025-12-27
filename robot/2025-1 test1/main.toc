@@ -1,0 +1,34 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {11}Kinetics of Particles}{2}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Sample Problem 11.2 $\bigstar $}{2}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Sample Problem 11.3 $\bigstar $}{3}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Problem 11.23 $\bigstar $}{3}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}}{4}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Problem 11.99}{4}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}}{4}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}}{5}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}fest(X)\hskip 1em\relax rest(O)}{5}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Problem 11.119 $\bigstar $}{5}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}}{6}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Problem 11.125 $\bigstar $}{6}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Problem 11.145}{7}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}Problem 11.142}{8}{subsection.11.13}%
+\contentsline {section}{\numberline {12}Kinetics of Particles : Newton's 2nd Law}{9}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Sample Problem 12.1}{9}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Sample Problem 12.3}{9}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Sample Problem 12.5}{9}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Problem 12.13}{9}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Problem 12.5 $\bigstar $}{10}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Problem 12.10 $\bigstar $}{10}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Problem 12.11 $\bigstar $}{10}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Problem 12.16 $\bigstar $}{10}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}Problem 12.21 $\bigstar $}{11}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Problem 12.32}{12}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}Sample Problem 12.6}{12}{subsection.12.11}%
+\contentsline {subsection}{\numberline {12.12}Sample Problem 12.7}{12}{subsection.12.12}%
+\contentsline {subsection}{\numberline {12.13}Sample Problem 12.12}{12}{subsection.12.13}%
+\contentsline {subsection}{\numberline {12.14}Problem 12.39 $\bigstar $}{12}{subsection.12.14}%
+\contentsline {subsection}{\numberline {12.15}Problem 12.49 $\bigstar $}{12}{subsection.12.15}%
+\contentsline {subsection}{\numberline {12.16}Problem 12.68 $\bigstar $}{12}{subsection.12.16}%
+\contentsline {subsection}{\numberline {12.17}Problem 12.90 $\bigstar $}{12}{subsection.12.17}%
+\contentsline {subsection}{\numberline {12.18}Problem 12.91}{12}{subsection.12.18}%

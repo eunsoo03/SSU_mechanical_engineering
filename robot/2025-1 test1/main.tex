@@ -1,0 +1,260 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage[abs]{overpic} %이미지 위 텍스트 삽입
+\usepackage{graphicx} %색상
+\usepackage{mdframed} %글상자
+\usepackage{titlesec} %섹션 이름 변경
+\titlespacing*{\section}{0mm}{0mm}{0mm}
+\titleformat{\section}{\bfseries\Large}{\Huge{\color{blue!60!green!80}\thesection}}{2ex}{}[]
+\titlespacing*{\subsection}{0mm}{0mm}{0mm}
+\titleformat{\subsection}{\bfseries}{\thesubsection\hspace{1ex}|}{1ex}{}[]
+\usepackage[many]{tcolorbox}
+\newcommand{\asw}[2]{
+	\begin{flushright}
+		{\color{blue!60!green}#1 \quad #2 \quad $\blacktriangleleft$}
+	\end{flushright}
+}
+\newcommand{\pbox}[3]
+{
+	\begin{tcolorbox}[
+		boxsep = 0mm,
+		left = 3mm,
+		right = 3mm,
+		valign = center,
+		colupper = black,
+		colback = #1!70!black!15,
+		colframe = #1!65!black,
+		segmentation style = {
+			double = #1!65!black,
+			draw = #1!65!black,
+			double distance=0.2mm,
+			solid},
+		after skip = 0mm
+		]
+		{\color{#1!65!black}#2}
+		\ifx#3""\else\tcbline #3\fi
+	\end{tcolorbox}
+}
+\newcommand{\cabox}[2]{\pbox{orange}{#1}{#2}}
+\newcommand{\spbox}[2]{\pbox{green}{#1}{#2}}
+\newcommand{\prbox}[2]{\pbox{blue!white!80}{#1}{#2}}
+\newcommand{\lpbox}[2]{\pbox{magenta}{#1}{#2}}
+
+\newcommand{\secbox}[1]{
+	\begin{tcolorbox}[
+		boxsep = 0mm,
+		left = 4mm,
+		right = 4mm,
+		valign = center,
+		colupper = blue!70!green!90,
+		colback = blue!70!green!15,
+		colframe = white,
+		boxrule = 0mm
+		]
+		#1
+	\end{tcolorbox}
+}
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\knpm}{kN/m}
+	\DeclareMathOperator{\kph}{km/h}
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\tkph}{kph}
+	\DeclareMathOperator{\tmps}{mps}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\nm}{N\cdot m}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\snd}{s}
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{kotex} %한글
+
+\title{
+	\vspace{150pt}
+	\textbf{\Huge Solutions}\\[10pt]
+	of Dynamics Midterm Exam 2025-1\\[20pt]
+	\vspace{55pt}
+	}
+\author{E.Hong\vspace{90pt}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\setlength{\parindent}{3mm}
+
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{SSU symbol KR-EN.jpg}
+\end{center}
+
+\newpage
+
+\spbox{\subsection*{Question 1}}
+	{
+	\begin{tabular}{m{50mm}m{95mm}}
+	\includegraphics[width = 50mm]{img/001.png}
+		&
+		A $1.5\kg$ collar can slide on a horizontal rod, which is free to rotate about a vertical shaft. The collar is initially held at $A$ by a cord attached to the shaft. A spring of constant $35\,\mathrm{N/m}$ is attached to the collar and to the shaft and is undeformed when the collar is at $A$. As the rod rotates at the rate is $19\,\mathrm{rad/s}$, the cord is cut and the collar moves out along the rod. Neglecting friction and the mass of the rod, determine (a) the acceleration of the collar relative to the rod at $A$, (c) the transverse component of the velocity of the collar at $B$.
+	\end{tabular}
+	}
+	\vspace{\baselineskip}
+	\begin{align*}
+		&\sum F_r = 0 = m(\ddot{r} - r\dot{\theta}^2) \quad\Rightarrow\quad \ddot{r} = r\dot{\theta}^2\\
+		&a_{\text{collar/rod}} = \ddot{r} = r\dot{\theta}^2 = (0.15\meter)(19\snd^{-1})^2 = 54.15\mpss
+	\end{align*}
+	\asw{($a$)}{$a_{\text{collar/rod}} = 54.15\mpss\mathbf{e}_r$}
+	\begin{align*}
+		&v_{\theta,B} = r_B\dot{\theta} = (0.45\meter)(19\snd^{-1}) = 8.55\mps
+	\end{align*}
+	\asw{($b$)}{$v_{\theta} = 8.55\mps$}
+
+\newpage
+
+\spbox{\subsection*{Question 2}}
+	{
+	\begin{tabular}{m{35mm}m{110mm}}
+		\includegraphics{img/008.png}
+		&
+		A 1.1-kg block $B$ moving to the left with a speed $v_0 = 3\mps$ strikes a 0.2-kg ball $A$ that is hanging from a cord and is initially at rest. Knowing that the coefficient of kinetic friction between $B$ and the ground is $0.6$ and the coefficient of restitution between $A$ and $B$ is $0.7$, determine ($a$) the maximum $h$ in [m], ($b$) $x$ when $B$ stops in [mm].
+	\end{tabular}
+	}
+	\vspace{\baselineskip}
+	$v_A$, $v_B$, $v_A'$ and $v_B'$ are consumed as positive number when directions of velocities of them is left.
+	\begin{align*}
+		\text{given :}\quad & v_A = 0,\quad v_B = 3\mps,\quad m_A = 0.5\kg,\quad m_B = 1\kg,\quad \mu_k = 0.6,\quad e = 0.7\\
+		&v_A' - v_B' = e(v_B - v_A)\\
+		&v_A' - v_B' = ev_B\tag{1}\\
+		&m_Av_A + m_Bv_B = m_Av_A' + m_Bv_B'\\
+		&m_Bv_B = m_Av_A' + m_Bv_B'\tag{2}\\
+		&\left\{\begin{array}{ll}
+		v_A' - v_B' = ev_B & \qquad(1)\\
+		m_Bv_B = m_Av_A' + m_Bv_B' & \qquad(2)
+		\end{array}\right.\\
+		&v_A' = \frac{m_B(e+1)}{m_A + m_B}v_B = \frac{(1.1)(0.7+1)}{0.2+1.1}(3\mps) = \frac{561}{130}\mps\\
+		&v_B' = v_A' - ev_B = \left(\frac{561}{130}\mps\right) - (0.7)(3\mps) = \frac{144}{65}\mps
+	\end{align*}\\[10pt]
+	\includegraphics{img/009.png}
+	\vspace{-32mm}\begin{align*}
+		\text{we got :}\quad & v_A' = \frac{561}{130}\mps,\quad v_B' = \frac{144}{65}\mps\\
+		&T_{A1} + V_{g,A1} = T_{A2} + V_{g,A2}\\
+		&\frac{1}{2}m_A(v_A')^2 + 0  = 0 + m_Agh\\
+		&h = \frac{(v_A')^2}{2g} = \frac{\left(\frac{561}{130}\right)^2}{2(9.81)}\meter = 0.949\meter
+	\end{align*}
+	\asw{($a$)}{$h = 0.949\meter$}
+	\begin{align*}
+		&T_{B1} + U_{B1\to B2} = T_{B2}\\
+		&\frac{1}{2}m_B (v_B')^2 - \mu_km_Bgx = 0\\
+		&x = \frac{(v_B')^2}{2\mu_k g} = \frac{\left(\frac{144}{65}\right)^2}{2(0.6)(9.81)} = 0.417\meter = 417\mm
+	\end{align*}
+	\asw{($b$)}{$x = 417\mm$}
+
+\newpage
+
+\spbox{\subsection*{Question 3}}
+	{
+	\begin{tabular}{m{49mm}m{96mm}}
+		\includegraphics{img/003.png}
+		& A 10-kg box $A$ and 20-kg box $B$ is sliding down the inclined conveyer belt in the position shown with speed $V_0$. Knowing that the coefficient of kinetic friction between $B$ and the belt is $0.3$, determine the minimum coefficient of static friction between $A$ and $B$ when $A$ does not slip on $B$.
+	\end{tabular}
+	}
+		$$\text{given : \quad}\mu_k = 0.3,\quad m_A = 10\kg,\quad m_B = 20\kg$$
+	In the system of $A$ and $B$, the FBD and KD is\\[5pt]
+	\begin{tabular}{m{55mm}m{90mm}}
+		\includegraphics{img/004.png}
+		&
+		$\displaystyle\sum F_y = 0$\newline\newline
+		$N_{B/\text{belt}} - W_{AB}\cos20\dgr = 0$\newline
+		$N_{B/\text{belt}} = (m_A+m_B)g\cos20\dgr$\newline
+		$f_{B-\text{belt}} = \mu_kN_{B/\text{belt}} = \mu_k(m_A+m_B)g\cos20\dgr$\newline\newline
+		$\displaystyle\sum F_x = ma$\newline\newline
+		$W_{AB}\sin20\dgr - f_{B-\text{belt}} = (m_A+m_B)a$\newline
+		$(m_A+m_B)g\sin20\dgr - \mu_k(m_A+m_B)g\cos20\dgr = (m_A+m_B)a$\newline
+		$a = g(\sin20\dgr - \mu_k\cos20\dgr) = 0.589702\mpss$
+	\end{tabular}\\[10pt]
+	In the system of $A$, the FBD and KD is\\[10pt]
+	\begin{tabular}{m{55mm}m{90mm}}
+		\includegraphics{img/005.png}
+		&
+		$\displaystyle\sum F_y = 0$\newline\newline
+		$N_{A/B} - W_A\cos20\dgr = 0$\newline
+		$N_{A/B} = m_Ag\cos20\dgr$\newline\newline
+		$\displaystyle\sum F_x = ma$\newline\newline
+		$W_A\sin20\dgr - f_{A-B} = m_Aa$\newline
+		$m_Ag\sin20\dgr - f_{A-B} = m_Ag(\sin20\dgr - \mu_k\cos20\dgr)$\newline
+		$f_{A-B} = \mu_km_Ag\cos20\dgr$
+	\end{tabular}
+	\begin{align*}
+		&f_{A-B}\leq \mu_sN_{A/B}\\
+		&\mu_km_Ag\cos20\dgr\leq \mu_sm_Ag\cos20\dgr\\
+		&\mu_k\leq \mu_s\\
+		&\mu_{s,\text{min}} = \mu_k = 0.3
+	\end{align*}
+	\asw{}{$0.300$}
+
+\newpage
+
+\spbox{\subsection*{Question 4}}
+	{
+	\begin{tabular}{m{50mm}m{95mm}}
+		\includegraphics{img/006.png}
+		&
+		A 20-Mg train $A$ is moving to the left in this picutre and combined with a 40-Mg train $B$ that is at rest. And its brake is working so the coefficient of friction between $B$ and the ground is $0.3$. When the speed of $B$ just before combination is $5\kph$, determine ($a$) the velocity of $A$ and $B$ just after combining and ($b$) the time taken for them to stop.
+	\end{tabular}
+	}
+	\begin{align*}
+		\text{given :}\quad & v_A = 5\kph = \frac{25}{18}\mps,\quad \mu_k = 0.3,\quad m_A = 20\times10^3\kg,\quad m_B = 40\times10^3\kg
+	\end{align*}
+	\begin{tabular}{m{85mm}m{65mm}}
+		\includegraphics{img/007.png}
+		&
+		$p_0 = m_Av_A = (m_A + m_B)v_{AB}$\newline\newline
+		$\displaystyle v_{AB} = \frac{m_Av_A}{m_A + m_B} = \frac{(20)(5\kph)}{40+20} $\newline\newline
+		$\phantom{v_{AB}} = 1.667\kph$
+	\end{tabular}
+	\asw{($a$)}{$\mathbf{v}_{AB} = 1.667\kph\leftarrow$}
+	\begin{align*}
+		&F = \mu_kN = \mu_km_Bg\\
+		&I = F\Delta t = \mu_km_Bg\Delta t\\
+		&p_0 - I = 0\\
+		&(m_A + m_B)v_{AB} - \mu_k m_Bg\Delta t = 0\\
+		&\Delta t = \frac{m_Av_A}{\mu_km_Bg} = \frac{(20)\left(\frac{25}{18}\mps\right)}{(0.3)(40)(9.81\mpss)} = 0.236\snd
+	\end{align*}
+	\asw{($b$)}{$\Delta t = 0.236\snd$}
+
+
+
+
+\end{document}

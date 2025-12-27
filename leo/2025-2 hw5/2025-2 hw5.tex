@@ -1,0 +1,194 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{wrapfig} %문단 내 이미지 삽입
+\usepackage{graphicx} %색상
+\usepackage{overpic}
+\usepackage[normalem]{ulem}%취소선
+\usepackage{array} %표
+\usepackage{mdframed, tcolorbox} %글상자
+\usepackage[yyyymmdd]{datetime}
+	\renewcommand{\dateseparator}{--}
+\usepackage{amsmath, amsfonts, amssymb, bm} %수식
+	\DeclareMathOperator{\arccsc}{arccsc}
+	\DeclareMathOperator{\arcsec}{arcsec}
+	\DeclareMathOperator{\arccot}{arccot}
+	\DeclareMathOperator{\csch}{csch}
+	\DeclareMathOperator{\sech}{sech}
+	\DeclareMathOperator{\arcsinh}{arcsinh}
+	\DeclareMathOperator{\arccosh}{arccosh}
+	\DeclareMathOperator{\arctanh}{arctanh}
+	\DeclareMathOperator{\arccsch}{arccsch}
+	\DeclareMathOperator{\arcsech}{arcsech}
+	\DeclareMathOperator{\arccoth}{arccoth}
+	
+	\DeclareMathOperator{\meter}{m}
+	\DeclareMathOperator{\cm}{cm}
+	\DeclareMathOperator{\mm}{mm}
+	\DeclareMathOperator{\mum}{\mu m}
+	\DeclareMathOperator{\newton}{N}
+	\DeclareMathOperator{\kn}{kN}
+	\DeclareMathOperator{\kgf}{kgf}
+	\DeclareMathOperator{\pa}{Pa}
+	\DeclareMathOperator{\kpa}{kPa}
+	\DeclareMathOperator{\mpa}{MPa}
+	\DeclareMathOperator{\gpa}{GPa}
+	\DeclareMathOperator{\npm}{N/m}
+	\DeclareMathOperator{\knpm}{kN/m}
+	\DeclareMathOperator{\kph}{km/h}
+	\DeclareMathOperator{\mps}{m/s}
+	\DeclareMathOperator{\tkph}{kph}
+	\DeclareMathOperator{\tmps}{mps}
+	\DeclareMathOperator{\mpss}{m/s^2}
+	\DeclareMathOperator{\dgr}{\!^\circ}
+	\DeclareMathOperator{\cel}{\!^\circ C}
+	\DeclareMathOperator{\kg}{kg}
+	\DeclareMathOperator{\kgpcm}{kg/m^3}
+	\DeclareMathOperator{\nm}{N\cdot m}
+	\DeclareMathOperator{\knm}{kN\cdot m}
+	\DeclareMathOperator{\kw}{kW}
+	\DeclareMathOperator{\kwh}{kWh}
+	\DeclareMathOperator{\mmhg}{mmHg}
+	\DeclareMathOperator{\snd}{s}
+\usepackage{polynom} %나눗셈 필산
+\usepackage{cancel} %수식 약분선
+\usepackage{titlesec} %섹션 이름 변경
+	\titlespacing*{\section}{3mm}{0mm}{1mm}
+	\titleformat{\section}{\bfseries\large}{}{0ex}{}
+\usepackage{kotex} %한글
+
+\newcommand{\prob}[2]{\section{#1}\begin{mdframed}#2\end{mdframed}}
+
+\newlength{\picwidth}
+\newcommand{\probpic}[4]{
+	\setlength{\picwidth}{145mm}\addtolength{\picwidth}{-#3}\section{#1}\begin{mdframed}\begin{tabular}{m{#3}m{\picwidth}}
+	\includegraphics[width = #3]{#2} & #4\end{tabular}\end{mdframed}
+	}
+
+\title{\vspace{100pt}\Huge{HW5}}
+\author{
+	2025-2 구조역학(박성훈 교수님)\\[10pt]
+	Problem 10.12, 10.14, 10.27, 10.31, 10.34, 10.39, 10.40\\[100pt]
+	오류 제보\quad eusnoohong03@soongsil.ac.kr\\
+	}
+\date{\today}
+
+\begin{document}
+	
+\renewcommand*{\titlepagestyle}{empty}
+\maketitle
+
+\vspace{60pt}
+
+\begin{center}
+	\includegraphics[width=0.45\textwidth]{SSU symbol KR-EN.jpg}
+\end{center}
+
+\newpage\setcounter{page}{1}
+
+\setlength{\parindent}{0pt}
+
+\probpic{Problem 10.12}{img/P012.png}{45mm}{A compression member of 1.5-m effective length consists of a solid 30-mm-diameter brass rod. To reduce the weight of the member by 25\%, the solid rod is replaced by a hollow rod of the cross section shown. Determine ($a$) the percent reduction in the critical load, ($b$) the value of the critical load for the hollow rod. Use $E = 200\gpa$.}
+
+\begin{align*}
+	&\text{let}\quad r = 15\mm = 0.015\meter\\
+	&I_\text{solid} = \frac{\pi}{4}r^4,\quad I_\text{hollow} = \frac{\pi}{4}\left\{r^4 - \left(\frac{r}{2}\right)^4\right\} = \frac{15\pi}{64} r^4\\
+	&P_\text{cr,solid} = \frac{\pi^2 EI_\text{solid}}{L_e^2},\quad P_\text{cr,hollow} = \frac{\pi^2 EI_\text{hollow}}{L_e^2}\\
+	&\frac{P_\text{cr,hollow}}{P_\text{cr,solid}} = \frac{I_\text{hollow}}{I_\text{solid}} = \frac{\frac{15}{64}}{\frac{1}{4}} = \frac{15}{16},\quad \text{(percent reduction in $P_\text{cr}$)} = \frac{1}{16} = 6.25\%\quad\blacktriangleleft\quad(a)\\
+	&P_\text{cr,hollow} = \frac{15}{64}\cdot\frac{\pi^3 Er^4}{L_e^2} = \frac{15}{64}\cdot\frac{\pi^3\cdot 200\times10^9\cdot0.015^4}{1.5^2}\newton = 32.7\kn\quad\blacktriangleleft\quad(b)
+\end{align*}
+
+\newpage
+
+\probpic{Problem 10.14}{img/P014.png}{45mm}{Determine ($a$) the critical load for the square strut, ($b$) the radius of the round strut for which both struts have the same critical load. ($c$) Express the cross-sectional area of the square strut as a percentage of the cross-sectional area of the round strut. Use $E = 200\gpa$.}
+
+\begin{align*}
+	&\text{let}\quad a = 25\mm = 0.025\meter\\
+	&I_\text{square} = \frac{a^4}{12} = \frac{10^{-4}}{3072}\meter^4\\
+	&P_\text{cr} = \frac{\pi^2 EI_\text{square}}{L_e^2} = \frac{\pi^2\cdot 200\times10^9\cdot \frac{10^{-4}}{3072}}{1^2} = 64.3\kn\quad\blacktriangleleft\quad(a)\\
+	&P_\text{cr} = \frac{\pi^2 EI_\text{square}}{L_e^2} = \frac{\pi^2 EI_\text{circle}}{L_e^2} \quad\Rightarrow\quad I_\text{square} = I_\text{circle} \quad\Rightarrow\quad \frac{a^4}{12} = \frac{\pi r^4}{4}\\
+	&\Rightarrow\quad r = \frac{a}{\sqrt[4]{3\pi}} = 14.27\mm\quad\blacktriangleleft\quad(b)\\
+	&\frac{A_\text{square}}{A_\text{circle}} = \frac{a^2}{\pi r^2} = 97.7\%\quad\blacktriangleleft\quad(c)
+\end{align*}
+
+\newpage
+
+\prob{Problem 10.27}{Each of the five struts shown consists of a solid steel rod. ($a$) Knowing that the strut of Fig.(1) is of a 20-mm diameter, determine the factor of safety with respect to buckling for the loading shown. ($b$) Determine the diameter of each of the other struts for which the factor of safety is the same as the factor of safety obtained in part $a$. Use $E = 200\gpa$.\\[5pt]
+\phantom{.}\hspace{20mm}\includegraphics[width = 110mm]{img/P027.png}}
+
+\begin{align*}
+	&\text{let}\quad d = 20\mm = 0.02\meter,\quad L_e = L = 900\mm = 0.9\meter,\quad I = \frac{\pi}{64}d^4
+\end{align*}
+In case (1),
+\begin{align*}
+	&(F.S.) = \frac{P_\text{cr}}{P_0} = \frac{\pi^2 EI}{P_0L_e^2} = \frac{\pi^3 Ed^4}{64P_0L^2} = \frac{\pi^3 \cdot 200\times10^9\cdot 0.02^4}{64\cdot 7500\cdot 0.9^2} = 2.55\quad\blacktriangleleft\quad (a)
+\end{align*}
+In other cases, when $L_e = kL$,
+\begin{align*}
+	&(F.S.) = \frac{\pi^3 Ed^4}{64P_0L^2} = \frac{\pi^3 Ed'^4}{64P_0k^2L^2} \quad\Rightarrow\quad d^4 = \frac{d'^4}{k^2} \quad\Rightarrow\quad d' = d\sqrt{k}\\[10pt]
+	&\left.\begin{array}{l}
+		\text{In case (2),}\quad k = 2,\quad d_2 = 20\sqrt{2}\mm = 28.3\mm\\[3pt]
+		\phantom{\text{In case }}\text{(3),} \quad k = 0.5,\quad d_3 = 20\sqrt{0.5}\mm = 14.14\mm\\[3pt]
+		\phantom{\text{In case }}\text{(4),} \quad k = 0.7,\quad d_4 = 20\sqrt{0.7}\mm = 16.73\mm\\[3pt]
+		\phantom{\text{In case }}\text{(5),} \quad k = 0.5\times2 = 1,\quad d_5 = d = 20.0\mm
+	\end{array}\right\} \quad\blacktriangleleft\quad (b)
+\end{align*}
+
+\newpage
+
+\probpic{Problem 10.31}{img/P031.png}{35mm}{An axial load $\mathbf{P}$ is applied to the 32-mm-diameter steel rod $AB$ as shown. For $P = 37\kn$ and $e= 1.2\mm$, determine ($a$) the deflection at the midpoint $C$ of the rod, ($b$) the maximum stress in the rod. Use $E = 200\gpa$.}
+
+\begin{align*}
+	&\text{let}\quad H = \sec \left(\frac{L}{2}\sqrt{\frac{P}{EI}}\right) = \left[\cos\left(\frac{1.2}{2}\sqrt{\frac{37\times10^3}{200\times10^{9}\cdot\frac{\pi}{64}\cdot 0.032^4}}\right)\right]^{-1} = 2.381730011\\
+	&y_\text{max} = e(H-1) = 1.2\mm (2.381730011 - 1) = 1.658\mm\quad\blacktriangleleft\quad (a)\\
+	&r^2 = \frac{I}{A} = \frac{\frac{\pi}{64}d^4}{\frac{\pi}{4}d^2} = \frac{d^2}{16} = 64\mm^2\\
+	&\frac{ec}{r^2} = \frac{1.2\cdot 16}{64} = 0.3\\
+	&\sigma_\text{max} = \frac{P}{A}\left(1+\frac{ec}{r^2}\cdot H\right) = \frac{37\times10^3}{\pi\cdot 0.016^2}\left(1 + 0.3\cdot 2.381730011\right)\pa = 78.9\mpa\quad\blacktriangleleft\quad (b)
+\end{align*}
+
+\newpage
+
+\probpic{Problem 10.34}{img/P034.png}{60mm}{The axial load $\mathbf{P}$ is applied at a point located on the $x$ axis at a distance $e$ from the geometric axis of the rolled-steel column $BC$. When $P = 350\kn$, the horizontal deflection of the top of the column is 5 mm. Using $E = 200\gpa$, determine ($a$) the eccentricity $e$ of the load, ($b$) the maximum stress in the column.}
+
+\begin{align*}
+	&I = I_Y = 18.7\times10^6\mm^4,\quad A = 7420\mm^2,\quad c = \frac{b_f}{2} = 101.5\mm\quad\cdots\quad\text{from appendix E}\\
+	&L_e = 2L = 6.4\meter\\
+	&\text{let}\quad H = \sec\left(\frac{L_e}{2}\sqrt{\frac{P}{EI}}\right) = \left[\cos\left(3.2\sqrt{\frac{350\times10^3}{200\times10^9\cdot 18.7\times10^{-6}}}\right)\right]^{-1} = 1.792380365\\
+	&y_\text{max} = e(H-1)\quad\Rightarrow\quad e = \frac{y_\text{max}}{H-1} = \frac{5\mm}{1.792380365-1} = 6.31\mm\quad\blacktriangleleft\quad(a)\\
+	&\frac{ec}{r^2} = \frac{ecA}{I} = \frac{6.31\cdot 101.5\cdot 7420}{18.7\times10^6} = 0.2541310321\\
+	&\sigma_\text{max} = \frac{P}{A}\left(1 + \frac{ec}{r^2}\cdot H\right) = \frac{350\times10^3}{7420\times10^{-6}}(1+0.2541310321\cdot 1.792380365)\pa = 68.7\mpa\\
+	&\hspace{135mm}\blacktriangle\quad(b)
+\end{align*}
+
+\newpage
+
+\probpic{Problem 10.39}{img/P039.png}{60mm}{An axial load $\mathbf{P}$ is applied at a point located on the $x$ axis at a distance $e = 12\mm$ from the geometric axis of the W310$\times$60 rolled-steel column $BC$. Assuming that $L = 3.5\meter$ and using $E =200\gpa$, determine ($a$) the load $P$ for which the horizontal deflection of the midpoint $C$ of the column is $15\mm$, ($b$) the corresponding maximum stress in the column.}
+
+\begin{align*}
+	&I = I_Y = 18.4\times10^6\mm^4,\quad A = 7550\mm^2,\quad c = \frac{b_f}{2} = 101.5\mm\quad\cdots\quad\text{from appendix E}\\
+	&L_e = 2L = 7.0\meter\\
+	&y_\text{max} = e\left[\sec\left(\frac{L_e}{2}\sqrt{\frac{P}{EI}}\right)-1\right]\quad\Rightarrow\quad P = \frac{EI}{L^2}\left[\arccos\left(\frac{e}{y_\text{max} + e}\right)\right]^2\\
+	&P = \frac{200\times10^9\cdot 18.4\times10^{-6}}{3.5^2}\left[\arccos\left(\frac{12}{15 + 12}\right)\right]^2 = 370\kn\quad\blacktriangleleft\quad(a)\\
+	&\text{let}\quad H = \sec\left(\frac{L_e}{2}\sqrt{\frac{P}{EI}}\right) = \left[\cos\left(3.5\sqrt{\frac{370\times10^3}{200\times10^9\cdot 18.4\times10^{-6}}}\right)\right]^{-1} = 2.247999207\\
+	&\frac{ec}{r^2} = \frac{ecA}{I} = \frac{12\cdot 101.5\cdot 7550}{18.4\times10^6} = 0.4997771739\\
+	&\sigma_\text{max} = \frac{P}{A}\left(1 + \frac{ec}{r^2}\cdot H\right) = \frac{370\times10^3}{7550\times10^{-6}}(1+0.4997771739\cdot 2.247999207)\pa = 104.1\mpa\\
+	&\hspace{135mm}\blacktriangle\quad(b)
+\end{align*}
+
+\newpage
+
+\prob{Problem 10.40}{Solve Prob. 10.39, assuming that $L$ is $4.5\meter$.}
+
+\begin{align*}
+	&I = I_Y = 18.4\times10^6\mm^4,\quad A = 7550\mm^2,\quad c = \frac{b_f}{2} = 101.5\mm\quad\cdots\quad\text{from appendix E}\\
+	&L_e = 2L = 9.0\meter\\
+	&y_\text{max} = e\left[\sec\left(\frac{L_e}{2}\sqrt{\frac{P}{EI}}\right)-1\right]\quad\Rightarrow\quad P = \frac{EI}{L^2}\left[\arccos\left(\frac{e}{y_\text{max} + e}\right)\right]^2\\
+	&P = \frac{200\times10^9\cdot 18.4\times10^{-6}}{4.5^2}\left[\arccos\left(\frac{12}{15 + 12}\right)\right]^2 = 224\kn\quad\blacktriangleleft\quad(a)\\
+	&\text{let}\quad H = \sec\left(\frac{L_e}{2}\sqrt{\frac{P}{EI}}\right) = \left[\cos\left(4.5\sqrt{\frac{224\times10^3}{200\times10^9\cdot 18.4\times10^{-6}}}\right)\right]^{-1} = 2.249940064\\
+	&\frac{ec}{r^2} = \frac{ecA}{I} = \frac{12\cdot 101.5\cdot 7550}{18.4\times10^6} = 0.4997771739\\
+	&\sigma_\text{max} = \frac{P}{A}\left(1 + \frac{ec}{r^2}\cdot H\right) = \frac{224\times10^3}{7550\times10^{-6}}(1+0.4997771739\cdot 2.249940064)\pa = 63.0\mpa\\
+	&\hspace{135mm}\blacktriangle\quad(b)
+\end{align*}
+
+\end{document}
