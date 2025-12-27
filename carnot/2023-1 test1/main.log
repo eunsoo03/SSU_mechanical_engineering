@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.27)  14 MAY 2025 11:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.5)  27 DEC 2025 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-11-02>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
@@ -24,11 +24,11 @@ File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \bibindent=\dimen141
 )
 (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
-eX and XeLaTeX
+Package: babel 2024/11/30 v24.14 The multilingual framework for pdfLaTeX, LuaLa
+TeX and XeLaTeX
 \babel@savecnt=\count266
 \U@D=\dimen142
-\l@unhyphenated=\language90
+\l@unhyphenated=\language89
 
 (c:/texlive/2024/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read2
@@ -39,9 +39,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language24). Reported on input line 105.
+(babel)             (\language23). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language24). Reported on input line 108.
+(babel)             (\language23). Reported on input line 108.
 ))
 (c:/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
@@ -58,7 +58,7 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count268
 \Gm@cntv=\count269
@@ -75,7 +75,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 (c:/texlive/2024/texmf-dist/tex/latex/multicolrule/multicolrule.sty
 (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
+Package: expl3 2024-11-02 L3 programming layer (loader) 
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
@@ -97,7 +97,7 @@ Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
 (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count274
 ))
 (c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -952,21 +952,86 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
+(c:/texlive/2024/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(c:/texlive/2024/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2024/10/18 v3.09
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(c:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+)
+\XKV@depth=\count367
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2024/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(c:/texlive/2024/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count368
+))
+\c@padzeroesN=\count369
+\fc@tmpcatcode=\count370
+
+(c:/texlive/2024/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+\@DT@modctr=\count371
+\@ordinalctr=\count372
+\@orgargctr=\count373
+\@strctr=\count374
+\@tmpstrctr=\count375
+\@DT@loopN=\count376
+\@DT@X=\count377
+)
+(c:/texlive/2024/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count378
+\@month=\count379
+\@year=\count380
+\c@HOUR=\count381
+\c@HOURXII=\count382
+\c@MINUTE=\count383
+\c@TOHOUR=\count384
+\c@TOMINUTE=\count385
+\c@SECOND=\count386
+\currenthour=\count387
+\currentminute=\count388
+\currentsecond=\count389
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count390
+\dayofyear=\count391
+\dayofweek=\count392
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks44
+\dt@b=\toks45
+)
 (c:/texlive/2024/texmf-dist/tex/latex/polynom/polynom.sty
 Package: polynom 2017/07/17 0.19 (CH,HA)
-\pld@currstage=\count367
+\pld@currstage=\count393
 )
 (c:/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box135
 \beforetitleunit=\skip127
 \aftertitleunit=\skip128
 \ttl@plus=\dimen302
 \ttl@minus=\dimen303
-\ttl@toksa=\toks42
+\ttl@toksa=\toks46
 \titlewidth=\dimen304
 \titlewidthlast=\dimen305
 \titlewidthfirst=\dimen306
@@ -976,7 +1041,7 @@ Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
 
 (c:/texlive/2024/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
 (c:/texlive/2024/texmf-dist/tex/xetex/xetexko/xetexko.sty
-Package: xetexko 2025/02/24 v4.4 typesetting Korean with XeTeX
+Package: xetexko 2024/03/01 v4.3 typesetting Korean with XeTeX
 \XeTeXcharclassID=\XeTeXcharclass4
 \XeTeXcharclassCJ=\XeTeXcharclass5
 \XeTeXcharclassOP=\XeTeXcharclass6
@@ -986,12 +1051,12 @@ Package: xetexko 2025/02/24 v4.4 typesetting Korean with XeTeX
 
 (c:/texlive/2024/texmf-dist/tex/generic/unicode-data/load-unicode-xetex-classes
 .tex 
-load-unicode-xetex-classes.tex v1.18 (2025-01-07)
+load-unicode-xetex-classes.tex v1.17 (2023-09-18)
 Reading Unicode east Asian character class data
-# LineBreak-16.0.0.txt 
-# Date: 2024-07-29, 16:26:55 GMT 
-# EastAsianWidth-16.0.0.txt 
-# Date: 2024-04-30, 21:48:20 GMT 
+# LineBreak-15.1.0.txt 
+# Date: 2023-07-28, 13:19:22 GMT [KW] 
+# EastAsianWidth-15.1.0.txt 
+# Date: 2023-07-28, 23:34:08 GMT 
 )
 \XeTeXcharclassHG=\XeTeXcharclass10
 \XeTeXcharclassJJ=\XeTeXcharclass11
@@ -1005,10 +1070,10 @@ Reading Unicode east Asian character class data
 \XeTeXcharclassAH=\XeTeXcharclass19
 \XeTeXcharclassAP=\XeTeXcharclass20
 \XeTeXcharclassVC=\XeTeXcharclass21
-\XeKo@toks@=\toks43
-\XeKo@toks@ii=\toks44
+\XeKo@toks@=\toks47
+\XeKo@toks@ii=\toks48
 \XeKo@skip@=\skip129
-\XeKo@count@=\count368
+\XeKo@count@=\count394
 \XeKo@dimen@=\dimen307
 \XeKo@box@=\box136
 \XeKo@dotemph@box=\box137
@@ -1016,46 +1081,40 @@ Reading Unicode east Asian character class data
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 )))
 (c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip130
-\f@nch@offset@elh=\skip131
-\f@nch@offset@erh=\skip132
-\f@nch@offset@olh=\skip133
-\f@nch@offset@orh=\skip134
-\f@nch@offset@elf=\skip135
-\f@nch@offset@erf=\skip136
-\f@nch@offset@olf=\skip137
-\f@nch@offset@orf=\skip138
-\f@nch@height=\skip139
-\f@nch@footalignment=\skip140
-\f@nch@widthL=\skip141
-\f@nch@widthC=\skip142
-\f@nch@widthR=\skip143
-\@temptokenb=\toks45
+\f@nch@O@elh=\skip131
+\f@nch@O@erh=\skip132
+\f@nch@O@olh=\skip133
+\f@nch@O@orh=\skip134
+\f@nch@O@elf=\skip135
+\f@nch@O@erf=\skip136
+\f@nch@O@olf=\skip137
+\f@nch@O@orf=\skip138
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1098,60 +1157,60 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 144.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 144.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 144.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 144.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 144.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 144.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 144.
-LaTeX Font Info:    Redeclaring math accent \check on input line 144.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 144.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 144.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 144.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 144.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 144.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 147.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 147.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 147.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 147.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 147.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 147.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 147.
+LaTeX Font Info:    Redeclaring math accent \check on input line 147.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 147.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 147.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 147.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 147.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 144.
+(Font)              `operators' in the math version `normal' on input line 147.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 144.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 147.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 144.
+(Font)              `operators' in the math version `bold' on input line 147.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 144.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 147.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 144.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 144.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 144.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 144.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/exprdgs-italic.ttf(0)/m/n on input 
-line 144.
+line 147.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 144.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 144.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 144.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 147.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/exprdgs-italic.ttf(0)/b/n on input 
-line 144.
-Package hyperref Info: Link coloring ON on input line 144.
+line 147.
+Package hyperref Info: Link coloring ON on input line 147.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1212,9 +1271,9 @@ e=dflt;extend=1.03;"
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <17.28> not av
 ailable
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input 
-line 146.
+line 149.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 146--147
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 149--150
  [][][] 
  []
 
@@ -1223,25 +1282,25 @@ File: qframe.png Graphic file (type bmp)
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not avail
 able
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input 
-line 152.
+line 155.
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 152--158
- []
+Overfull \hbox (29.91882pt too wide) in paragraph at lines 155--161
+  []
  []
 
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 159--164
- []
+Overfull \hbox (29.91882pt too wide) in paragraph at lines 162--167
+  []
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 164
+LaTeX Font Info:    Trying to load font information for U+msa on input line 167
 .
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 164
+LaTeX Font Info:    Trying to load font information for U+msb on input line 167
 .
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1250,29 +1309,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 172--174
- []
- []
-
-File: qframe.png Graphic file (type bmp)
-<qframe.png>
-
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 180--184
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 175--177
+  []
  []
 
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 200--203
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 183--187
+  []
  []
 
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 236--238
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 203--206
+  []
  []
+
+File: qframe.png Graphic file (type bmp)
+<qframe.png>
+
+Overfull \hbox (29.91882pt too wide) in paragraph at lines 239--241
+  []
  []
 
 
@@ -1286,15 +1345,15 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 255--258
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 258--261
+  []
  []
 
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 271--274
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 274--277
+  []
  []
 
 File: img/q14-0.png Graphic file (type bmp)
@@ -1302,8 +1361,8 @@ File: img/q14-0.png Graphic file (type bmp)
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 310--313
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 313--316
+  []
  []
 
 File: img/q15-0.png Graphic file (type bmp)
@@ -1317,8 +1376,8 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 File: qframe.png Graphic file (type bmp)
 <qframe.png>
 
-Overfull \hbox (27.69882pt too wide) in paragraph at lines 338--342
- []
+Overfull \hbox (29.19882pt too wide) in paragraph at lines 341--345
+  []
  []
 
 
@@ -1328,19 +1387,19 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [3] (./main.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
+LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32281 strings out of 473840
- 625506 string characters out of 5733401
- 1097707 words of memory out of 5000000
- 54820 multiletter control sequences out of 15000+600000
- 564023 words of font info for 88 fonts, out of 8000000 for 9000
+ 33030 strings out of 473964
+ 636945 string characters out of 5736611
+ 1123278 words of memory out of 5000000
+ 55418 multiletter control sequences out of 15000+600000
+ 563255 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,14n,101p,536b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,1018b,2745s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (3 pages).

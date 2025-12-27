@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.5)  27 DEC 2025 14:02
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.5)  27 DEC 2025 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,18 +1273,7 @@ LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <17.28> not av
 ailable
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input 
 line 143.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 143
-.
 
-(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 143
-.
-
-(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Overfull \hbox (28.45274pt too wide) in paragraph at lines 143--144
  [][][] 
  []
@@ -1313,7 +1302,17 @@ Overfull \hbox (29.91882pt too wide) in paragraph at lines 156--158
   []
  []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 158
+.
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 158
+.
 
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 162--166
 
  []
@@ -1385,11 +1384,11 @@ Package rerunfilecheck Info: File `"2025-1 report2".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 33035 strings out of 473964
- 637321 string characters out of 5736611
- 1125311 words of memory out of 5000000
- 55416 multiletter control sequences out of 15000+600000
- 568226 words of font info for 111 fonts, out of 8000000 for 9000
+ 33005 strings out of 473964
+ 636761 string characters out of 5736611
+ 1125246 words of memory out of 5000000
+ 55395 multiletter control sequences out of 15000+600000
+ 563271 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,18n,101p,1030b,2745s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
