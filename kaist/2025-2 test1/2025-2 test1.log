@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.27)  16 DEC 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  27 DEC 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"2025-2 중간.tex"
-(./2025-2 중간.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+**"2025-2 test1.tex"
+(./2025-2 test1.tex
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-11-02>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2024/10/24 v3.43 KOMA-Script document class (article)
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -133,11 +133,11 @@ Class scrartcl Info: Redefining `\numberline' on input line 6523.
 \bibindent=\dimen141
 )
 (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
-eX and XeLaTeX
+Package: babel 2024/11/30 v24.14 The multilingual framework for pdfLaTeX, LuaLa
+TeX and XeLaTeX
 \babel@savecnt=\count271
 \U@D=\dimen142
-\l@unhyphenated=\language90
+\l@unhyphenated=\language89
 
 (c:/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -148,9 +148,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language24). Reported on input line 105.
+(babel)             (\language23). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language24). Reported on input line 108.
+(babel)             (\language23). Reported on input line 108.
 ))
 (c:/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
@@ -163,7 +163,7 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count273
 \Gm@cntv=\count274
@@ -222,7 +222,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \c@section@level=\count276
 )
 (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count277
 )
 (c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
@@ -371,7 +371,7 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
+Package: expl3 2024-11-02 L3 programming layer (loader) 
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
@@ -917,8 +917,7 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
 (c:/texlive/2024/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-Package: fmtcount 2025/02/09 v3.10 Displaying the values of LaTeX counters (NT,
-VB,NE)
+Package: fmtcount 2024/10/18 v3.09
 
 (c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
@@ -991,7 +990,7 @@ nesformat
 (scrartcl)              package `titlesec' on input line 18.
 
 (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2025/01/04 v2.17 Sectioning titles
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box89
 \beforetitleunit=\skip136
 \aftertitleunit=\skip137
@@ -1151,8 +1150,8 @@ File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
 (c:/texlive/2024/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 )))
-(./2025-2 중간.aux)
-\openout1 = `"2025-2 중간.aux"'.
+(./2025-2 test1.aux)
+\openout1 = `"2025-2 test1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
 LaTeX Font Info:    ... okay on input line 183.
@@ -1225,9 +1224,9 @@ Package scrbase Info: activating english \indexname on input line 183.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 183.
-(./2025-2 중간.out) (./2025-2 중간.out)
+(./2025-2 test1.out) (./2025-2 test1.out)
 \@outlinefile=\write4
-\openout4 = `"2025-2 중간.out"'.
+\openout4 = `"2025-2 test1.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1325,22 +1324,22 @@ Overfull \hbox (23.37675pt too wide) detected at line 321
 
 [5]
 
-[6] (./2025-2 중간.aux)
+[6] (./2025-2 test1.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `"2025-2 중간".out' has not changed.
+Package rerunfilecheck Info: File `"2025-2 test1".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32735 strings out of 473201
- 656066 string characters out of 5720299
- 1284605 words of memory out of 5000000
- 55385 multiletter control sequences out of 15000+600000
- 595339 words of font info for 165 fonts, out of 8000000 for 9000
+ 32727 strings out of 473329
+ 655944 string characters out of 5723857
+ 1282693 words of memory out of 5000000
+ 55259 multiletter control sequences out of 15000+600000
+ 594571 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,15n,107p,10937b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,15n,107p,10936b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2024/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dis
@@ -1380,7 +1379,7 @@ ist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2024/texmf-dist/fo
 nts/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2024/texmf-dist/fonts/ty
 pe1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
 blic/nanumtype1/nanummjmd6.pfb>
-Output written on "2025-2 중간.pdf" (7 pages, 1571188 bytes).
+Output written on "2025-2 test1.pdf" (7 pages, 1571188 bytes).
 PDF statistics:
  255 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
